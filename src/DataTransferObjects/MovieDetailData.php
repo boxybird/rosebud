@@ -43,6 +43,7 @@ final readonly class MovieDetailData
         public array $alternative_titles,
         public CreditsData $credits,
         public ImagesData $images,
+        public ReleasesData $releases,
         public VideosData $videos,
         public ComputedData $computed
     ) {
@@ -77,10 +78,21 @@ final readonly class MovieDetailData
             video: $data['video'],
             vote_average: $data['vote_average'],
             vote_count: $data['vote_count'],
+            /**
+             * Tmdb API double nests '"keywords" => ["keywords" => ["keyword", "..."]]'
+             * with may serve a purpose and break my DTO. But it's weird, so I'm
+             * going with '"keywords" => ["keyword", "..."]'.
+             */
             keywords: array_map(fn(array $keyword) => KeywordData::fromArray($keyword), $data['keywords']['keywords']),
+            /**
+             * Tmdb API nests '"alternative_titles" => ["titles" => ["title", "..."]]'
+             * with may serve a purpose and break my DTO. But it's weird, so I'm
+             * going with '"alternative_titles" => ["title", "..."]'.
+             */
             alternative_titles: array_map(fn(array $title) => AlternativeTitleData::fromArray($title), $data['alternative_titles']['titles']),
             credits: CreditsData::fromArray($data['credits']),
             images: ImagesData::fromArray($data['images']),
+            releases: ReleasesData::fromArray($data['releases']),
             videos: VideosData::fromArray($data['videos']),
             computed: ComputedData::fromArray($data),
         );
@@ -119,6 +131,7 @@ final readonly class MovieDetailData
             'titles' => array_map(fn(AlternativeTitleData $title) => $title->toArray(), $this->alternative_titles),
             'credits' => $this->credits->toArray(),
             'images' => $this->images->toArray(),
+            'releases' => $this->releases->toArray(),
             'videos' => $this->videos->toArray(),
             'computed' => $this->computed->toArray(),
         ];
