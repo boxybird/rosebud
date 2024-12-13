@@ -37,10 +37,8 @@ final readonly class MovieDetailData
         public bool $video,
         public float $vote_average,
         public int $vote_count,
-        /** @var KeywordData[] */
-        public array $keywords,
-        /** @var AlternativeTitleData[] */
-        public array $alternative_titles,
+        public KeywordsData $keywords,
+        public AlternativeTitlesData $alternative_titles,
         public CreditsData $credits,
         public ImagesData $images,
         public ReleasesData $releases,
@@ -78,18 +76,8 @@ final readonly class MovieDetailData
             video: $data['video'],
             vote_average: $data['vote_average'],
             vote_count: $data['vote_count'],
-            /**
-             * Tmdb API double nests '"keywords" => ["keywords" => ["keyword", "..."]]'
-             * with may serve a purpose and break my DTO. But it's weird, so I'm
-             * going with '"keywords" => ["keyword", "..."]'.
-             */
-            keywords: array_map(fn(array $keyword) => KeywordData::fromArray($keyword), $data['keywords']['keywords']),
-            /**
-             * Tmdb API nests '"alternative_titles" => ["titles" => ["title", "..."]]'
-             * with may serve a purpose and break my DTO. But it's weird, so I'm
-             * going with '"alternative_titles" => ["title", "..."]'.
-             */
-            alternative_titles: array_map(fn(array $title) => AlternativeTitleData::fromArray($title), $data['alternative_titles']['titles']),
+            keywords: KeywordsData::fromArray($data['keywords']),
+            alternative_titles: AlternativeTitlesData::fromArray($data['alternative_titles']),
             credits: CreditsData::fromArray($data['credits']),
             images: ImagesData::fromArray($data['images']),
             releases: ReleasesData::fromArray($data['releases']),
@@ -127,8 +115,8 @@ final readonly class MovieDetailData
             'video' => $this->video,
             'vote_average' => $this->vote_average,
             'vote_count' => $this->vote_count,
-            'keywords' => array_map(fn(KeywordData $keyword) => $keyword->toArray(), $this->keywords),
-            'titles' => array_map(fn(AlternativeTitleData $title) => $title->toArray(), $this->alternative_titles),
+            'keywords' => $this->keywords->toArray(),
+            'titles' => $this->alternative_titles->toArray(),
             'credits' => $this->credits->toArray(),
             'images' => $this->images->toArray(),
             'releases' => $this->releases->toArray(),
