@@ -36,7 +36,7 @@ final readonly class PersonData
             profile_path: $data['profile_path'],
             known_for: array_map(function (array $movie) {
                 return MovieData::fromArray($movie);
-            }, $data['known_for'] ?? []),
+            }, $data['known_for']),
             computed: ComputedData::fromArray($data),
         );
     }
