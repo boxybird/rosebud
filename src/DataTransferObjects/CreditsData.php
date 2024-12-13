@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Rosebud\DataTransferObjects;
 
-final readonly class MovieCreditsData
+final readonly class CreditsData
 {
     public function __construct(
         /** @var CastMemberData[] */
@@ -29,7 +29,7 @@ final readonly class MovieCreditsData
         return [
             'id' => $this->id,
             'cast' => array_map(fn(CastMemberData $member) => $member->toArray(), $this->cast),
-            'crew' => array_map(fn(CrewMemberData $member) => $member->toArray(), $this->crew)
+            'crew' => array_map(fn(CrewMemberData $member) => $member->toArray(), $this->crew),
         ];
     }
 }
