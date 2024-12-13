@@ -39,6 +39,8 @@ final readonly class MovieDetailData
         public int $vote_count,
         /** @var KeywordData[] */
         public array $keywords,
+        /** @var AlternativeTitleData[] */
+        public array $alternative_titles,
         public MovieCreditsData $credits,
         public MovieImagesData $images,
         public MovieVideosData $videos,
@@ -88,10 +90,14 @@ final readonly class MovieDetailData
                 fn(array $keyword) => KeywordData::fromArray($keyword),
                 $data['keywords']['keywords'] ?? []
             ),
+            alternative_titles: array_map(
+                fn(array $title) => AlternativeTitleData::fromArray($title),
+                $data['titles'] ?? []
+            ),
             credits: MovieCreditsData::fromArray($data['credits']),
             images: MovieImagesData::fromArray($data['images']),
             videos: MovieVideosData::fromArray($data['videos']),
-            computed: ComputedData::fromArray($data)
+            computed: ComputedData::fromArray($data),
         );
     }
 
@@ -136,6 +142,10 @@ final readonly class MovieDetailData
             'keywords' => array_map(
                 fn(KeywordData $keyword) => $keyword->toArray(),
                 $this->keywords
+            ),
+            'titles' => array_map(
+                fn(AlternativeTitleData $title) => $title->toArray(),
+                $this->alternative_titles
             ),
             'credits' => $this->credits->toArray(),
             'images' => $this->images->toArray(),
