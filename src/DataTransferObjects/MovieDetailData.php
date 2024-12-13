@@ -41,7 +41,7 @@ final readonly class MovieDetailData
         public array $keywords,
         /** @var AlternativeTitleData[] */
         public array $alternative_titles,
-        public MovieCreditsData $credits,
+        public CreditsData $credits,
         public MovieImagesData $images,
         public MovieVideosData $videos,
         public ComputedData $computed
@@ -55,10 +55,7 @@ final readonly class MovieDetailData
             backdrop_path: $data['backdrop_path'],
             belongs_to_collection: $data['belongs_to_collection'],
             budget: $data['budget'],
-            genres: array_map(
-                fn(array $genre) => GenreData::fromArray($genre),
-                $data['genres'] ?? []
-            ),
+            genres: array_map(fn(array $genre) => GenreData::fromArray($genre), $data['genres']),
             homepage: $data['homepage'],
             id: $data['id'],
             imdb_id: $data['imdb_id'],
@@ -68,36 +65,21 @@ final readonly class MovieDetailData
             overview: $data['overview'],
             popularity: $data['popularity'],
             poster_path: $data['poster_path'],
-            production_companies: array_map(
-                fn(array $company) => ProductionCompanyData::fromArray($company),
-                $data['production_companies'] ?? []
-            ),
-            production_countries: array_map(
-                fn(array $country) => ProductionCountryData::fromArray($country),
-                $data['production_countries'] ?? []
-            ),
+            production_companies: array_map(fn(array $company) => ProductionCompanyData::fromArray($company), $data['production_companies']),
+            production_countries: array_map(fn(array $country) => ProductionCountryData::fromArray($country), $data['production_countries']),
             release_date: $data['release_date'],
             revenue: $data['revenue'],
             runtime: $data['runtime'],
-            spoken_languages: array_map(
-                fn(array $language) => SpokenLanguageData::fromArray($language),
-                $data['spoken_languages'] ?? []
-            ),
+            spoken_languages: array_map(fn(array $language) => SpokenLanguageData::fromArray($language), $data['spoken_languages']),
             status: $data['status'],
             tagline: $data['tagline'],
             title: $data['title'],
             video: $data['video'],
             vote_average: $data['vote_average'],
             vote_count: $data['vote_count'],
-            keywords: array_map(
-                fn(array $keyword) => KeywordData::fromArray($keyword),
-                $data['keywords']['keywords'] ?? []
-            ),
-            alternative_titles: array_map(
-                fn(array $title) => AlternativeTitleData::fromArray($title),
-                $data['titles'] ?? []
-            ),
-            credits: MovieCreditsData::fromArray($data['credits']),
+            keywords: array_map(fn(array $keyword) => KeywordData::fromArray($keyword), $data['keywords']['keywords']),
+            alternative_titles: array_map(fn(array $title) => AlternativeTitleData::fromArray($title), $data['alternative_titles']['titles']),
+            credits: CreditsData::fromArray($data['credits']),
             images: MovieImagesData::fromArray($data['images']),
             videos: MovieVideosData::fromArray($data['videos']),
             computed: ComputedData::fromArray($data),
@@ -121,35 +103,20 @@ final readonly class MovieDetailData
             'overview' => $this->overview,
             'popularity' => $this->popularity,
             'poster_path' => $this->poster_path,
-            'production_companies' => array_map(
-                fn(ProductionCompanyData $company) => $company->toArray(),
-                $this->production_companies
-            ),
-            'production_countries' => array_map(
-                fn(ProductionCountryData $country) => $country->toArray(),
-                $this->production_countries
-            ),
+            'production_companies' => array_map(fn(ProductionCompanyData $company) => $company->toArray(), $this->production_companies),
+            'production_countries' => array_map(fn(ProductionCountryData $country) => $country->toArray(), $this->production_countries),
             'release_date' => $this->release_date,
             'revenue' => $this->revenue,
             'runtime' => $this->runtime,
-            'spoken_languages' => array_map(
-                fn(SpokenLanguageData $language) => $language->toArray(),
-                $this->spoken_languages
-            ),
+            'spoken_languages' => array_map(fn(SpokenLanguageData $language) => $language->toArray(), $this->spoken_languages),
             'status' => $this->status,
             'tagline' => $this->tagline,
             'title' => $this->title,
             'video' => $this->video,
             'vote_average' => $this->vote_average,
             'vote_count' => $this->vote_count,
-            'keywords' => array_map(
-                fn(KeywordData $keyword) => $keyword->toArray(),
-                $this->keywords
-            ),
-            'titles' => array_map(
-                fn(AlternativeTitleData $title) => $title->toArray(),
-                $this->alternative_titles
-            ),
+            'keywords' => array_map(fn(KeywordData $keyword) => $keyword->toArray(), $this->keywords),
+            'titles' => array_map(fn(AlternativeTitleData $title) => $title->toArray(), $this->alternative_titles),
             'credits' => $this->credits->toArray(),
             'images' => $this->images->toArray(),
             'videos' => $this->videos->toArray(),
