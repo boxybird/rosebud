@@ -53,7 +53,7 @@ class Tmdb
     public function movieDetails(int $id, int $times = 2, int $sleep = 2000): MovieDetailData
     {
         $data = $this->get('https://api.themoviedb.org/3/movie/'.$id, [
-            'append_to_response' => 'keywords,alternative_titles,changes,credits,images,lists,releases,reviews,similar,translations,videos',
+            'append_to_response' => 'keywords,alternative_titles,credits,images,releases,reviews,similar,translations,videos',
         ], $times, $sleep);
 
         return MovieDetailData::fromArray($data);
