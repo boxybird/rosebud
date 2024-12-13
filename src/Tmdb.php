@@ -65,14 +65,14 @@ class Tmdb
             $response = (new Http())
                 ->withHeaders($this->headers)
                 ->retry($times, $sleep)
-                ->get($url, $query);;
+                ->get($url, $query);
 
             if ($response->failed()) {
                 return [];
             }
 
             return $response->json();
-        } catch (Exception $e) {
+        } catch (Exception) {
             return [];
         }
     }
