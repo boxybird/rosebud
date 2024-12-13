@@ -55,7 +55,10 @@ final readonly class MovieDetailData
             backdrop_path: $data['backdrop_path'],
             belongs_to_collection: $data['belongs_to_collection'],
             budget: $data['budget'],
-            genres: array_map(fn(array $genre) => GenreData::fromArray($genre), $data['genres']),
+            genres: array_map(
+                fn(array $genre) => GenreData::fromArray($genre),
+                $data['genres'] ?? []
+            ),
             homepage: $data['homepage'],
             id: $data['id'],
             imdb_id: $data['imdb_id'],
@@ -67,18 +70,18 @@ final readonly class MovieDetailData
             poster_path: $data['poster_path'],
             production_companies: array_map(
                 fn(array $company) => ProductionCompanyData::fromArray($company),
-                $data['production_companies']
+                $data['production_companies'] ?? []
             ),
             production_countries: array_map(
                 fn(array $country) => ProductionCountryData::fromArray($country),
-                $data['production_countries']
+                $data['production_countries'] ?? []
             ),
             release_date: $data['release_date'],
             revenue: $data['revenue'],
             runtime: $data['runtime'],
             spoken_languages: array_map(
                 fn(array $language) => SpokenLanguageData::fromArray($language),
-                $data['spoken_languages']
+                $data['spoken_languages'] ?? []
             ),
             status: $data['status'],
             tagline: $data['tagline'],
