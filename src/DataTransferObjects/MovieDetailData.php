@@ -11,6 +11,7 @@ final readonly class MovieDetailData
         public string $backdrop_path,
         public ?array $belongs_to_collection,
         public int $budget,
+        /** @var GenreData[] */
         public array $genres,
         public string $homepage,
         public int $id,
@@ -21,11 +22,14 @@ final readonly class MovieDetailData
         public string $overview,
         public float $popularity,
         public string $poster_path,
+        /** @var ProductionCompanyData[] */
         public array $production_companies,
+        /** @var ProductionCountryData[] */
         public array $production_countries,
         public string $release_date,
         public int $revenue,
         public int $runtime,
+        /** @var SpokenLanguageData[] */
         public array $spoken_languages,
         public string $status,
         public string $tagline,
@@ -33,6 +37,8 @@ final readonly class MovieDetailData
         public bool $video,
         public float $vote_average,
         public int $vote_count,
+        /** @var KeywordData[] */
+        public array $keywords,
         public MovieCreditsData $credits,
         public MovieImagesData $images,
         public MovieVideosData $videos,
@@ -78,6 +84,10 @@ final readonly class MovieDetailData
             video: $data['video'],
             vote_average: $data['vote_average'],
             vote_count: $data['vote_count'],
+            keywords: array_map(
+                fn(array $keyword) => KeywordData::fromArray($keyword),
+                $data['keywords']['keywords'] ?? []
+            ),
             credits: MovieCreditsData::fromArray($data['credits']),
             images: MovieImagesData::fromArray($data['images']),
             videos: MovieVideosData::fromArray($data['videos']),
@@ -123,6 +133,10 @@ final readonly class MovieDetailData
             'video' => $this->video,
             'vote_average' => $this->vote_average,
             'vote_count' => $this->vote_count,
+            'keywords' => array_map(
+                fn(KeywordData $keyword) => $keyword->toArray(),
+                $this->keywords
+            ),
             'credits' => $this->credits->toArray(),
             'images' => $this->images->toArray(),
             'videos' => $this->videos->toArray(),
