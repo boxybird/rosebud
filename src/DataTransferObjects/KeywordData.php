@@ -8,7 +8,7 @@ final readonly class KeywordData
 {
     public function __construct(
         public int $id,
-        public string $name
+        public string $name,
     ) {
     }
 
@@ -16,7 +16,7 @@ final readonly class KeywordData
     {
         return new self(
             id: $data['id'],
-            name: $data['name']
+            name: $data['name'],
         );
     }
 
@@ -24,7 +24,7 @@ final readonly class KeywordData
     {
         return [
             'id' => $this->id,
-            'name' => $this->name
+            'name' => $this->name,
         ];
     }
 }
