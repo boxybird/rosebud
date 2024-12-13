@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Rosebud\DataTransferObjects;
 
-final readonly class MovieVideosData
+final readonly class VideosData
 {
     public function __construct(
         /** @var VideoData[] */

@@ -42,8 +42,8 @@ final readonly class MovieDetailData
         /** @var AlternativeTitleData[] */
         public array $alternative_titles,
         public CreditsData $credits,
-        public MovieImagesData $images,
-        public MovieVideosData $videos,
+        public ImagesData $images,
+        public VideosData $videos,
         public ComputedData $computed
     ) {
     }
@@ -80,8 +80,8 @@ final readonly class MovieDetailData
             keywords: array_map(fn(array $keyword) => KeywordData::fromArray($keyword), $data['keywords']['keywords']),
             alternative_titles: array_map(fn(array $title) => AlternativeTitleData::fromArray($title), $data['alternative_titles']['titles']),
             credits: CreditsData::fromArray($data['credits']),
-            images: MovieImagesData::fromArray($data['images']),
-            videos: MovieVideosData::fromArray($data['videos']),
+            images: ImagesData::fromArray($data['images']),
+            videos: VideosData::fromArray($data['videos']),
             computed: ComputedData::fromArray($data),
         );
     }

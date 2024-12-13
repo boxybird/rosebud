@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Rosebud\DataTransferObjects;
 
-final readonly class MovieImagesData
+final readonly class ImagesData
 {
     public function __construct(
         public array $backdrops,
