@@ -9,7 +9,7 @@ final readonly class AlternativeTitleData
     public function __construct(
         public string $iso_3166_1,
         public string $title,
-        public string $type
+        public string $type,
     ) {
     }
 
@@ -18,7 +18,7 @@ final readonly class AlternativeTitleData
         return new self(
             iso_3166_1: $data['iso_3166_1'],
             title: $data['title'],
-            type: $data['type']
+            type: $data['type'],
         );
     }
 
@@ -27,7 +27,7 @@ final readonly class AlternativeTitleData
         return [
             'iso_3166_1' => $this->iso_3166_1,
             'title' => $this->title,
-            'type' => $this->type
+            'type' => $this->type,
         ];
     }
 }
