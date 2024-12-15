@@ -1,0 +1,75 @@
+{
+    "id": 287,
+    "name": "Brad Pitt",
+    "original_name": "Brad Pitt",
+    "media_type": "person",
+    "adult": false,
+    "popularity": 55.05,
+    "gender": 2,
+    "known_for_department": "Acting",
+    "profile_path": "\/4rjnRCQ6bGFYdBb4UooOjsQy12c.jpg",
+    "known_for": [
+        {
+            "backdrop_path": "\/1Jpkm9qZcsT0mSyVXgs4VlGjPNI.jpg",
+            "id": 16869,
+            "title": "Inglourious Basterds",
+            "original_title": "Inglourious Basterds",
+            "overview": "In Nazi-occupied France during World War II, a group of Jewish-American soldiers known as \"The Basterds\" are chosen specifically to spread fear throughout the Third Reich by scalping and brutally killing Nazis. The Basterds, lead by Lt. Aldo Raine soon cross paths with a French-Jewish teenage girl who runs a movie theater in Paris which is targeted by the soldiers.",
+            "poster_path": "\/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                18,
+                53,
+                10752
+            ],
+            "popularity": 82.874,
+            "release_date": "2009-08-02",
+            "video": false,
+            "vote_average": 8.218,
+            "vote_count": 22264
+        },
+        {
+            "backdrop_path": "\/kg2FOT2Oe5PSCgs3L4vLel6B7ck.jpg",
+            "id": 72190,
+            "title": "World War Z",
+            "original_title": "World War Z",
+            "overview": "Life for former United Nations investigator Gerry Lane and his family seems content. Suddenly, the world is plagued by a mysterious infection turning whole human populations into rampaging mindless zombies. After barely escaping the chaos, Lane is persuaded to go on a mission to investigate this disease. What follows is a perilous trek around the world where Lane must brave horrific dangers and long odds to find answers before human civilization falls.",
+            "poster_path": "\/aCnVdvExw6UWSeQfr0tUH3jr4qG.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                28,
+                27,
+                878,
+                53
+            ],
+            "popularity": 90.642,
+            "release_date": "2013-06-19",
+            "video": false,
+            "vote_average": 6.82,
+            "vote_count": 15362
+        },
+        {
+            "backdrop_path": "\/hZkgoQYus5vegHoetLkCJzb17zJ.jpg",
+            "id": 550,
+            "title": "Fight Club",
+            "original_title": "Fight Club",
+            "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+            "poster_path": "\/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+            "media_type": "movie",
+            "adult": false,
+            "original_language": "en",
+            "genre_ids": [
+                18
+            ],
+            "popularity": 97.041,
+            "release_date": "1999-10-15",
+            "video": false,
+            "vote_average": 8.4,
+            "vote_count": 29498
+        }
+    ]
+}
