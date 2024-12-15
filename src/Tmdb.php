@@ -4,13 +4,9 @@ namespace Rosebud;
 
 use Exception;
 use Illuminate\Http\Client\Factory as Http;
-use Rosebud\DataTransferObjects\MovieData;
-use Rosebud\DataTransferObjects\MovieDetailData;
-use Rosebud\DataTransferObjects\PersonData;
-use Rosebud\DataTransferObjects\TvData;
-use Rosebud\DataTransferObjects\TvEpisodeData;
+use Rosebud\Enums\ExternalSourcesEnum;
 
-class Tmdb
+abstract class Tmdb
 {
     protected array $headers = [];
 
@@ -24,39 +20,13 @@ class Tmdb
         ];
     }
 
-    public function findByImdbId(string $id, int $times = 2, int $sleep = 2000): MovieData|PersonData|TvData|TvEpisodeData|null
+    public function findByID(string $external_id, ExternalSourcesEnum $external_source, string $results_key, int $times = 2, int $sleep = 2000): array
     {
-        $results = $this->get('https://api.themoviedb.org/3/find/'.$id, [
-            'external_source' => 'imdb_id',
+        $results = $this->get('https://api.themoviedb.org/3/find/'.$external_id, [
+            'external_source' => $external_source->value,
         ], $times, $sleep);
 
-        $filtered_results = array_filter($results, function ($result) {
-            return !empty($result);
-        });
-
-        $key = array_key_first($filtered_results);
-        $data = $filtered_results[$key][0] ?? [];
-
-        if (empty($key) || empty($data)) {
-            return null;
-        }
-
-        return match ($key) {
-            'movie_results' => MovieData::fromArray($data),
-            'person_results' => PersonData::fromArray($data),
-            'tv_results' => TvData::fromArray($data),
-            'tv_episode_results' => TvEpisodeData::fromArray($data),
-            default => null
-        };
-    }
-
-    public function movieDetails(int $id, int $times = 2, int $sleep = 2000): MovieDetailData
-    {
-        $data = $this->get('https://api.themoviedb.org/3/movie/'.$id, [
-            'append_to_response' => 'keywords,alternative_titles,credits,images,releases,reviews,similar,translations,videos',
-        ], $times, $sleep);
-
-        return MovieDetailData::fromArray($data);
+        return $results[$results_key][0] ?? [];
     }
 
     protected function get(string $url, array $query = [], int $times = 2, int $sleep = 2000): array
