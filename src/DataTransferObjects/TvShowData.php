@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Rosebud\DataTransferObjects;
 
-final readonly class TvData
+final readonly class TvShowData
 {
     public function __construct(
         public string $backdrop_path,
