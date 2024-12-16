@@ -43,6 +43,7 @@ final readonly class MovieDetailData
         public ImagesData $images,
         public ReleasesData $releases,
         public VideosData $videos,
+        public SimilarMoviesData $similar,
         public ReviewsData $reviews,
         public ComputedData $computed
     ) {
@@ -83,6 +84,7 @@ final readonly class MovieDetailData
             images: ImagesData::fromArray($data['images']),
             releases: ReleasesData::fromArray($data['releases']),
             videos: VideosData::fromArray($data['videos']),
+            similar: SimilarMoviesData::fromArray($data['similar']),
             reviews: ReviewsData::fromArray($data['reviews']),
             computed: ComputedData::fromArray($data),
         );
@@ -123,6 +125,7 @@ final readonly class MovieDetailData
             'images' => $this->images->toArray(),
             'releases' => $this->releases->toArray(),
             'videos' => $this->videos->toArray(),
+            'similar' => $this->similar->toArray(),
             'reviews' => $this->reviews->toArray(),
             'computed' => $this->computed->toArray(),
         ];
