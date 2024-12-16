@@ -122,7 +122,7 @@ final readonly class MovieDetailData
             'vote_average' => $this->vote_average,
             'vote_count' => $this->vote_count,
             'keywords' => $this->keywords->toArray(),
-            'titles' => $this->alternative_titles->toArray(),
+            'alternative_titles' => $this->alternative_titles->toArray(),
             'credits' => $this->credits->toArray(),
             'images' => $this->images->toArray(),
             'releases' => $this->releases->toArray(),
