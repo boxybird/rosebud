@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects;
+namespace Rosebud\DataTransferObjects\Movies;
+
+use Rosebud\DataTransferObjects\ComputedData;
 
 final readonly class ProductionCompanyData
 {

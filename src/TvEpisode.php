@@ -2,7 +2,7 @@
 
 namespace Rosebud;
 
-use Rosebud\DataTransferObjects\TvEpisodeData;
+use Rosebud\DataTransferObjects\TvEpisodes\TvEpisodeData;
 use Rosebud\Enums\ExternalSourcesEnum;
 
 class TvEpisode extends Tmdb

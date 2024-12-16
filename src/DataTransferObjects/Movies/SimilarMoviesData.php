@@ -2,14 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects;
+namespace Rosebud\DataTransferObjects\Movies;
 
-final readonly class ReviewsData
+final readonly class SimilarMoviesData
 {
-
     public function __construct(
         public int $page,
-        /** @var ReviewData[] */
+        /** @var SimilarMovieData[] */
         public array $results,
     ) {
     }
@@ -18,7 +17,7 @@ final readonly class ReviewsData
     {
         return new self(
             page: $data['page'],
-            results: array_map(fn(array $review) => ReviewData::fromArray($review), $data['results']),
+            results: array_map(fn(array $movie) => SimilarMovieData::fromArray($movie), $data['results']),
         );
     }
 
@@ -26,7 +25,7 @@ final readonly class ReviewsData
     {
         return [
             'page' => $this->page,
-            'results' => array_map(fn(ReviewData $review) => $review->toArray(), $this->results),
+            'results' => array_map(fn(SimilarMovieData $movie) => $movie->toArray(), $this->results),
         ];
     }
 }

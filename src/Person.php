@@ -2,7 +2,7 @@
 
 namespace Rosebud;
 
-use Rosebud\DataTransferObjects\PersonData;
+use Rosebud\DataTransferObjects\People\PersonData;
 use Rosebud\Enums\ExternalSourcesEnum;
 
 class Person extends Tmdb

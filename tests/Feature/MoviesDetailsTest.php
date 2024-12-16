@@ -1,6 +1,6 @@
 <?php
 
-use Rosebud\DataTransferObjects\MovieDetailData;
+use Rosebud\DataTransferObjects\Movies\MovieDetailData;
 use Rosebud\Movie;
 
 it('can get movie details', function () {

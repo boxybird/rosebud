@@ -2,15 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects;
+namespace Rosebud\DataTransferObjects\Movies;
 
-final readonly class TvShowData
+use Rosebud\DataTransferObjects\ComputedData;
+
+final readonly class MovieData
 {
     public function __construct(
         public string $backdrop_path,
         public int $id,
-        public string $name,
-        public string $original_name,
+        public string $title,
+        public string $original_title,
         public string $overview,
         public string $poster_path,
         public string $media_type,
@@ -18,10 +20,10 @@ final readonly class TvShowData
         public string $original_language,
         public array $genre_ids,
         public float $popularity,
-        public string $first_air_date,
+        public string $release_date,
+        public bool $video,
         public float $vote_average,
         public int $vote_count,
-        public array $origin_country,
         public ComputedData $computed
     ) {
     }
@@ -31,8 +33,8 @@ final readonly class TvShowData
         return new self(
             backdrop_path: $data['backdrop_path'],
             id: $data['id'],
-            name: $data['name'],
-            original_name: $data['original_name'],
+            title: $data['title'],
+            original_title: $data['original_title'],
             overview: $data['overview'],
             poster_path: $data['poster_path'],
             media_type: $data['media_type'],
@@ -40,10 +42,10 @@ final readonly class TvShowData
             original_language: $data['original_language'],
             genre_ids: $data['genre_ids'],
             popularity: $data['popularity'],
-            first_air_date: $data['first_air_date'],
+            release_date: $data['release_date'],
+            video: $data['video'],
             vote_average: $data['vote_average'],
             vote_count: $data['vote_count'],
-            origin_country: $data['origin_country'],
             computed: ComputedData::fromArray($data),
         );
     }
@@ -53,8 +55,8 @@ final readonly class TvShowData
         return [
             'backdrop_path' => $this->backdrop_path,
             'id' => $this->id,
-            'name' => $this->name,
-            'original_name' => $this->original_name,
+            'title' => $this->title,
+            'original_title' => $this->original_title,
             'overview' => $this->overview,
             'poster_path' => $this->poster_path,
             'media_type' => $this->media_type,
@@ -62,10 +64,10 @@ final readonly class TvShowData
             'original_language' => $this->original_language,
             'genre_ids' => $this->genre_ids,
             'popularity' => $this->popularity,
-            'first_air_date' => $this->first_air_date,
+            'release_date' => $this->release_date,
+            'video' => $this->video,
             'vote_average' => $this->vote_average,
             'vote_count' => $this->vote_count,
-            'origin_country' => $this->origin_country,
             'computed' => $this->computed->toArray(),
         ];
     }

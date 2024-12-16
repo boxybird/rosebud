@@ -1,10 +1,10 @@
 <?php
 
-use Rosebud\DataTransferObjects\MovieData;
-use Rosebud\DataTransferObjects\MovieDetailData;
-use Rosebud\DataTransferObjects\PersonData;
-use Rosebud\DataTransferObjects\TvEpisodeData;
-use Rosebud\DataTransferObjects\TvShowData;
+use Rosebud\DataTransferObjects\Movies\MovieData;
+use Rosebud\DataTransferObjects\Movies\MovieDetailData;
+use Rosebud\DataTransferObjects\People\PersonData;
+use Rosebud\DataTransferObjects\TvEpisodes\TvEpisodeData;
+use Rosebud\DataTransferObjects\TvSeries\TvShowData;
 
 it('can create a movie data transfer object', function (array $movie) {
     $movie = MovieData::fromArray($movie);

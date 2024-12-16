@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects;
+namespace Rosebud\DataTransferObjects\People;
+
+use Rosebud\DataTransferObjects\ComputedData;
+use Rosebud\DataTransferObjects\Movies\MovieData;
 
 final readonly class PersonData
 {
@@ -34,9 +37,7 @@ final readonly class PersonData
             gender: $data['gender'],
             known_for_department: $data['known_for_department'],
             profile_path: $data['profile_path'],
-            known_for: array_map(function (array $movie) {
-                return MovieData::fromArray($movie);
-            }, $data['known_for']),
+            known_for: array_map(fn(array $movie) => MovieData::fromArray($movie), $data['known_for']),
             computed: ComputedData::fromArray($data),
         );
     }

@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects;
+namespace Rosebud\DataTransferObjects\TvEpisodes;
+
+use Rosebud\DataTransferObjects\ComputedData;
 
 final readonly class TvEpisodeData
 {

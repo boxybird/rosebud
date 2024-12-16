@@ -2,8 +2,8 @@
 
 namespace Rosebud;
 
-use Rosebud\DataTransferObjects\MovieData;
-use Rosebud\DataTransferObjects\MovieDetailData;
+use Rosebud\DataTransferObjects\Movies\MovieData;
+use Rosebud\DataTransferObjects\Movies\MovieDetailData;
 use Rosebud\Enums\ExternalSourcesEnum;
 
 class Movie extends Tmdb

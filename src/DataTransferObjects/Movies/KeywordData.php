@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects;
+namespace Rosebud\DataTransferObjects\Movies;
 
-final readonly class GenreData
+final readonly class KeywordData
 {
     public function __construct(
         public int $id,
-        public string $name
+        public string $name,
     ) {
     }
 
@@ -16,7 +16,7 @@ final readonly class GenreData
     {
         return new self(
             id: $data['id'],
-            name: $data['name']
+            name: $data['name'],
         );
     }
 
@@ -24,7 +24,7 @@ final readonly class GenreData
     {
         return [
             'id' => $this->id,
-            'name' => $this->name
+            'name' => $this->name,
         ];
     }
 }

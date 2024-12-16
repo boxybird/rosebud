@@ -1,9 +1,9 @@
 <?php
 
-use Rosebud\DataTransferObjects\MovieData;
-use Rosebud\DataTransferObjects\PersonData;
-use Rosebud\DataTransferObjects\TvEpisodeData;
-use Rosebud\DataTransferObjects\TvShowData;
+use Rosebud\DataTransferObjects\Movies\MovieData;
+use Rosebud\DataTransferObjects\People\PersonData;
+use Rosebud\DataTransferObjects\TvEpisodes\TvEpisodeData;
+use Rosebud\DataTransferObjects\TvSeries\TvShowData;
 use Rosebud\Enums\ExternalSourcesEnum;
 use Rosebud\Movie;
 use Rosebud\Person;
