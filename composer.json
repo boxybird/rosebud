@@ -1,4 +1,25 @@
 {
+    "name": "boxybird/rosebud",
+    "description": "A TMDB (The Movie Database) API wrapper. Includes Data Transfer Objects (DTO).",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "dto",
+        "data transfer objects",
+        "tmdb",
+        "wrapper",
+        "movie",
+        "cinema",
+        "tv",
+        "tv show",
+        "tv episode"
+    ],
+    "authors": [
+        {
+            "name": "Andrew Rhyand",
+            "email": "hello@andrewrhyand.com"
+        }
+    ],
     "require-dev": {
         "illuminate/collections": "^11.34",
         "illuminate/http": "^11.34",
