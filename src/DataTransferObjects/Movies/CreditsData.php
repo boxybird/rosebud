@@ -18,9 +18,9 @@ final readonly class CreditsData
     public static function fromArray(array $data): self
     {
         return new self(
+            id: $data['id'] ?? null,
             cast: array_map(fn(array $member) => CastMemberData::fromArray($member), $data['cast']),
             crew: array_map(fn(array $member) => CrewMemberData::fromArray($member), $data['crew']),
-            id: $data['id'] ?? null
         );
     }
 
