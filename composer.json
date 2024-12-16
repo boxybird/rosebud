@@ -20,6 +20,9 @@
             "email": "hello@andrewrhyand.com"
         }
     ],
+    "require": {
+        "php": "^8.2"
+    },
     "require-dev": {
         "illuminate/collections": "^11.34",
         "illuminate/http": "^11.34",
