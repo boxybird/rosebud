@@ -24,7 +24,7 @@ it('can create a person data transfer object', function (array $person) {
     expect($person)->toBeInstanceOf(PersonData::class);
 })->with('people');
 
-it('can create a tv data transfer object', function (array $tv_show) {
+it('can create a tv show data transfer object', function (array $tv_show) {
     $tv_show = TvShowData::fromArray($tv_show);
 
     expect($tv_show)->toBeInstanceOf(TvShowData::class);
