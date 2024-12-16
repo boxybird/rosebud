@@ -6,7 +6,7 @@ use Rosebud\DataTransferObjects\People\PersonData;
 use Rosebud\DataTransferObjects\TvEpisodes\TvEpisodeData;
 use Rosebud\DataTransferObjects\TvSeries\TvShowData;
 
-it('can create a movie data transfer object', function (array $movie) {
+it('can create a movie data transfer object and then back to matching array', function (array $movie) {
     $movie_data = MovieData::fromArray($movie);
 
     expect($movie_data)->toBeInstanceOf(MovieData::class);
@@ -21,7 +21,7 @@ it('can create a movie data transfer object', function (array $movie) {
 
 })->with('movies');
 
-it('can create a movie detail data transfer object', function (array $movie) {
+it('can create a movie detail data transfer object and then back to matching array', function (array $movie) {
     $movie_data = MovieDetailData::fromArray($movie);
 
     expect($movie_data)->toBeInstanceOf(MovieDetailData::class);
@@ -35,7 +35,7 @@ it('can create a movie detail data transfer object', function (array $movie) {
         ->and($movie_array)->toHaveKeys($properties);
 })->with('movie details');
 
-it('can create a person data transfer object', function (array $person) {
+it('can create a person data transfer object and then back to matching array', function (array $person) {
     $person_data = PersonData::fromArray($person);
 
     expect($person_data)->toBeInstanceOf(PersonData::class);
@@ -49,7 +49,7 @@ it('can create a person data transfer object', function (array $person) {
         ->and($person_array)->toHaveKeys($properties);
 })->with('people');
 
-it('can create a tv show data transfer object', function (array $tv_show) {
+it('can create a tv show data transfer object and then back to matching array', function (array $tv_show) {
     $tv_show_data = TvShowData::fromArray($tv_show);
 
     expect($tv_show_data)->toBeInstanceOf(TvShowData::class);
@@ -63,7 +63,7 @@ it('can create a tv show data transfer object', function (array $tv_show) {
         ->and($tv_show_array)->toHaveKeys($properties);
 })->with('tv shows');
 
-it('can create a tv episode data transfer object', function (array $tv_episode) {
+it('can create a tv episode data transfer object and then back to matching array', function (array $tv_episode) {
     $tv_episode_data = TvEpisodeData::fromArray($tv_episode);
 
     expect($tv_episode_data)->toBeInstanceOf(TvEpisodeData::class);
