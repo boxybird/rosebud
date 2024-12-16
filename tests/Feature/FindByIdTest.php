@@ -53,7 +53,7 @@ it('finds tv episode by imdb id', function () {
 it('finds tv show by tvdb id', function () {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
-    $tv_show = (new TvShow(api_key: $api_key))->find(81189, ExternalSourcesEnum::TVDB); // Breaking Bad
+    $tv_show = (new TvShow(api_key: $api_key))->find('81189', ExternalSourcesEnum::TVDB); // Breaking Bad
 
     expect($tv_show)
         ->toBeInstanceOf(TvShowData::class)
