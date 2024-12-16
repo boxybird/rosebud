@@ -43,11 +43,11 @@ it('finds tv show by imdb id', function () {
 it('finds tv episode by imdb id', function () {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
-    $tv = (new TvEpisode(api_key: $api_key))->find('tt0697679'); // Seinfeld - The Contest Episode
+    $tv = (new TvEpisode(api_key: $api_key))->find('tt2301451'); // Breaking Bad - Ozymandias
 
     expect($tv)
         ->toBeInstanceOf(TvEpisodeData::class)
-        ->and($tv->name)->toBe('The Contest');
+        ->and($tv->name)->toBe('Ozymandias');
 });
 
 it('finds tv show by tvdb id', function () {
