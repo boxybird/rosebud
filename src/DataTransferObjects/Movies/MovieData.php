@@ -18,6 +18,7 @@ final readonly class MovieData
         public string $media_type,
         public bool $adult,
         public string $original_language,
+        /** @var int[] */
         public array $genre_ids,
         public float $popularity,
         public string $release_date,

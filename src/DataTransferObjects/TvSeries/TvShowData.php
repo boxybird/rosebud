@@ -18,6 +18,7 @@ final readonly class TvShowData
         public string $media_type,
         public bool $adult,
         public string $original_language,
+        /** @var int[] */
         public array $genre_ids,
         public float $popularity,
         public string $first_air_date,

@@ -9,6 +9,7 @@ final readonly class SimilarMovieData
     public function __construct(
         public bool $adult,
         public string|null $backdrop_path,
+        /** @var int[] */
         public array $genre_ids,
         public int $id,
         public string $original_language,
