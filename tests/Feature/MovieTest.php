@@ -1,5 +1,6 @@
 <?php
 
+use Rosebud\DataTransferObjects\MovieLists\Popular;
 use Rosebud\DataTransferObjects\Movies\MovieData;
 use Rosebud\DataTransferObjects\People\PersonData;
 use Rosebud\DataTransferObjects\TvEpisodes\TvEpisodeData;
@@ -58,4 +59,12 @@ it('finds tv show by tvdb id', function () {
     expect($tv_show)
         ->toBeInstanceOf(TvShowData::class)
         ->and($tv_show->name)->toBe('Breaking Bad');
+});
+
+it('get popular movies', function () {
+    $api_key = getTestingEnv('TMDB_API_KEY');
+
+    $movies = (new Movie(api_key: $api_key))->popular();
+
+    expect($movies)->toBeInstanceOf(Popular::class);
 });

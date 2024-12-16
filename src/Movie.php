@@ -2,6 +2,7 @@
 
 namespace Rosebud;
 
+use Rosebud\DataTransferObjects\MovieLists\Popular;
 use Rosebud\DataTransferObjects\Movies\MovieData;
 use Rosebud\DataTransferObjects\Movies\MovieDetailData;
 use Rosebud\Enums\ExternalSourcesEnum;
@@ -13,6 +14,15 @@ class Movie extends Tmdb
         $data = $this->findByID($id, $external_source, 'movie_results', $times, $sleep);
 
         return $data ? MovieData::fromArray($data) : null;
+    }
+
+    public function popular(int $page = 1, int $times = 2, int $sleep = 2000): Popular
+    {
+        $data = $this->get('https://api.themoviedb.org/3/movie/popular', [
+            'page' => $page,
+        ], $times, $sleep);
+
+        return Popular::fromArray($data);
     }
 
     public function details(int $id, int $times = 2, int $sleep = 2000): MovieDetailData
