@@ -38,7 +38,7 @@ final readonly class MovieData
             original_title: $data['original_title'],
             overview: $data['overview'],
             poster_path: $data['poster_path'],
-            media_type: $data['media_type'],
+            media_type: $data['media_type'] ?? '',
             adult: $data['adult'],
             original_language: $data['original_language'],
             genre_ids: $data['genre_ids'],
