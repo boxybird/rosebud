@@ -8,7 +8,7 @@ final readonly class RecommendationsData
 {
     public function __construct(
         public int $page,
-        /** @var RecommendedData[] */
+        /** @var MovieData[] */
         public array $results,
     ) {
     }
@@ -17,7 +17,7 @@ final readonly class RecommendationsData
     {
         return new self(
             page: $data['page'],
-            results: array_map(fn(array $movie) => RecommendedData::fromArray($movie), $data['results']),
+            results: array_map(fn(array $movie) => MovieData::fromArray($movie), $data['results']),
         );
     }
 
@@ -25,7 +25,7 @@ final readonly class RecommendationsData
     {
         return [
             'page' => $this->page,
-            'results' => array_map(fn(RecommendedData $movie) => $movie->toArray(), $this->results),
+            'results' => array_map(fn(MovieData $movie) => $movie->toArray(), $this->results),
         ];
     }
 }
