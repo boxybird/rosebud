@@ -1,0 +1,22 @@
+{
+    "backdrop_path": "\/3wGykQ9hQzX6YVayQRvEDVhU8bF.jpg",
+    "id": 2506,
+    "name": "Wings",
+    "original_name": "Wings",
+    "overview": "Brothers Brian and Joe Hackett attempt to run an airline on the New England island of Nantucket while surrounded by their various wacky friends and employees.",
+    "poster_path": "\/eqf5p8fU7liYAMznUBMWMeSYfCQ.jpg",
+    "media_type": "tv",
+    "adult": false,
+    "original_language": "en",
+    "genre_ids": [
+        35,
+        18
+    ],
+    "popularity": 51.759,
+    "first_air_date": "1990-04-19",
+    "vote_average": 6.876,
+    "vote_count": 121,
+    "origin_country": [
+        "US"
+    ]
+}
