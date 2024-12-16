@@ -17,7 +17,7 @@ final readonly class TvEpisodeData
         public int $episode_number,
         public string $episode_type,
         public string $production_code,
-        public int $runtime,
+        public int|null $runtime,
         public int $season_number,
         public int $show_id,
         public string $still_path,
