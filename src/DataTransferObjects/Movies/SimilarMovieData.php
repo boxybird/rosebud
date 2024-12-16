@@ -8,7 +8,7 @@ final readonly class SimilarMovieData
 {
     public function __construct(
         public bool $adult,
-        public string|null $backdrop_path,
+        public ?string $backdrop_path,
         /** @var int[] */
         public array $genre_ids,
         public int $id,
@@ -16,7 +16,7 @@ final readonly class SimilarMovieData
         public string $original_title,
         public string $overview,
         public float $popularity,
-        public string|null $poster_path,
+        public ?string $poster_path,
         public string $release_date,
         public string $title,
         public bool $video,

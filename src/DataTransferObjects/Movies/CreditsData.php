@@ -7,7 +7,7 @@ namespace Rosebud\DataTransferObjects\Movies;
 final readonly class CreditsData
 {
     public function __construct(
-        public int|null $id,
+        public ?int $id,
         /** @var CastMemberData[] */
         public array $cast,
         /** @var CrewMemberData[] */
