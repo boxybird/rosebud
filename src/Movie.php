@@ -18,7 +18,7 @@ class Movie extends Tmdb
 
     public function popular(int $page = 1, int $times = 2, int $sleep = 2000): Popular
     {
-        $data = $this->get('https://api.themoviedb.org/3/movie/popular', [
+        $data = $this->get($this->base_url.'/movie/popular', [
             'page' => $page,
         ], $times, $sleep);
 
@@ -27,7 +27,7 @@ class Movie extends Tmdb
 
     public function details(int $id, int $times = 2, int $sleep = 2000): MovieDetailData
     {
-        $data = $this->get('https://api.themoviedb.org/3/movie/'.$id, [
+        $data = $this->get($this->base_url.'/movie/'.$id, [
             'append_to_response' => 'alternative_titles,credits,external_ids,images,keywords,latest,recommendations,release_dates,reviews,similar,releases,translations,videos,providers',
         ], $times, $sleep);
 
