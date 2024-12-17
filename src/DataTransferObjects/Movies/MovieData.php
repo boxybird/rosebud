@@ -9,7 +9,7 @@ use Rosebud\DataTransferObjects\ComputedData;
 final readonly class MovieData
 {
     public function __construct(
-        public string $backdrop_path,
+        public ?string $backdrop_path,
         public int $id,
         public string $title,
         public string $original_title,

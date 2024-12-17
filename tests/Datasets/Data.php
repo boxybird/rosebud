@@ -10,6 +10,7 @@ dataset('movie details', [
     [getResponse('citizen-kane-details.json')],
     [getResponse('ghostbusters-details.json')],
     [getResponse('fight-club-details.json')],
+    [getResponse('pink-flamingos.json')],
 ]);
 
 dataset('people', [
