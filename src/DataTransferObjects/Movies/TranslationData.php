@@ -9,8 +9,8 @@ final readonly class TranslationData
     public function __construct(
         public string $iso_3166_1,
         public string $iso_639_1,
-        public string $name,
-        public string $english_name,
+        public ?string $name,
+        public ?string $english_name,
         public TranslationDataContent $data,
     ) {
     }

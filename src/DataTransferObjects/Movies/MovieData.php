@@ -14,7 +14,7 @@ final readonly class MovieData
         public string $title,
         public string $original_title,
         public string $overview,
-        public string $poster_path,
+        public ?string $poster_path,
         public string $media_type,
         public bool $adult,
         public string $original_language,

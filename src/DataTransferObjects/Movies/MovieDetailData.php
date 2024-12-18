@@ -10,20 +10,20 @@ final readonly class MovieDetailData
 {
     public function __construct(
         public bool $adult,
-        public string $backdrop_path,
+        public ?string $backdrop_path,
         public ?array $belongs_to_collection,
         public int $budget,
         /** @var GenreData[] */
         public array $genres,
         public string $homepage,
         public int $id,
-        public string $imdb_id,
+        public ?string $imdb_id,
         public array $origin_country,
         public string $original_language,
         public string $original_title,
         public string $overview,
         public float $popularity,
-        public string $poster_path,
+        public ?string $poster_path,
         /** @var ProductionCompanyData[] */
         public array $production_companies,
         /** @var ProductionCountryData[] */
