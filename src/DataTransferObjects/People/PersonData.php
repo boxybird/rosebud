@@ -6,6 +6,7 @@ namespace Rosebud\DataTransferObjects\People;
 
 use Rosebud\DataTransferObjects\ComputedData;
 use Rosebud\DataTransferObjects\Movies\MovieData;
+use Rosebud\Enums\MediaTypesEnum;
 
 final readonly class PersonData
 {
@@ -13,7 +14,7 @@ final readonly class PersonData
         public int $id,
         public string $name,
         public string $original_name,
-        public string $media_type,
+        public ?MediaTypesEnum $media_type,
         public bool $adult,
         public float $popularity,
         public int $gender,
@@ -31,7 +32,7 @@ final readonly class PersonData
             id: $data['id'],
             name: $data['name'],
             original_name: $data['original_name'],
-            media_type: $data['media_type'],
+            media_type: $data['media_type'] ?? null ? MediaTypesEnum::from($data['media_type']) : null,
             adult: $data['adult'],
             popularity: $data['popularity'],
             gender: $data['gender'],
@@ -48,7 +49,7 @@ final readonly class PersonData
             'id' => $this->id,
             'name' => $this->name,
             'original_name' => $this->original_name,
-            'media_type' => $this->media_type,
+            'media_type' => $this->media_type?->value,
             'adult' => $this->adult,
             'popularity' => $this->popularity,
             'gender' => $this->gender,

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Rosebud\DataTransferObjects\Movies;
 
 use Rosebud\DataTransferObjects\ComputedData;
+use Rosebud\Enums\MediaTypesEnum;
 
 final readonly class MovieData
 {
@@ -15,7 +16,7 @@ final readonly class MovieData
         public string $original_title,
         public string $overview,
         public ?string $poster_path,
-        public string $media_type,
+        public ?MediaTypesEnum $media_type,
         public bool $adult,
         public string $original_language,
         /** @var int[] */
@@ -38,7 +39,7 @@ final readonly class MovieData
             original_title: $data['original_title'],
             overview: $data['overview'],
             poster_path: $data['poster_path'],
-            media_type: $data['media_type'] ?? '',
+            media_type: $data['media_type'] ?? null ? MediaTypesEnum::from($data['media_type']) : null,
             adult: $data['adult'],
             original_language: $data['original_language'],
             genre_ids: $data['genre_ids'],
@@ -60,7 +61,7 @@ final readonly class MovieData
             'original_title' => $this->original_title,
             'overview' => $this->overview,
             'poster_path' => $this->poster_path,
-            'media_type' => $this->media_type,
+            'media_type' => $this->media_type?->value,
             'adult' => $this->adult,
             'original_language' => $this->original_language,
             'genre_ids' => $this->genre_ids,

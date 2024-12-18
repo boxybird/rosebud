@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Rosebud\DataTransferObjects\TvEpisodes;
 
 use Rosebud\DataTransferObjects\ComputedData;
+use Rosebud\Enums\MediaTypesEnum;
 
 final readonly class TvEpisodeData
 {
@@ -12,7 +13,7 @@ final readonly class TvEpisodeData
         public int $id,
         public string $name,
         public string $overview,
-        public string $media_type,
+        public ?MediaTypesEnum $media_type,
         public float $vote_average,
         public int $vote_count,
         public string $air_date,
@@ -33,7 +34,7 @@ final readonly class TvEpisodeData
             id: $data['id'],
             name: $data['name'],
             overview: $data['overview'],
-            media_type: $data['media_type'],
+            media_type: $data['media_type'] ?? null ? MediaTypesEnum::from($data['media_type']) : null,
             vote_average: $data['vote_average'],
             vote_count: $data['vote_count'],
             air_date: $data['air_date'],
@@ -54,7 +55,7 @@ final readonly class TvEpisodeData
             'id' => $this->id,
             'name' => $this->name,
             'overview' => $this->overview,
-            'media_type' => $this->media_type,
+            'media_type' => $this->media_type?->value,
             'vote_average' => $this->vote_average,
             'vote_count' => $this->vote_count,
             'air_date' => $this->air_date,
