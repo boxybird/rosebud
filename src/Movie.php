@@ -4,7 +4,7 @@ namespace Rosebud;
 
 use Rosebud\DataTransferObjects\MovieLists\Popular;
 use Rosebud\DataTransferObjects\Movies\MovieData;
-use Rosebud\DataTransferObjects\Movies\MovieDetailData;
+use Rosebud\DataTransferObjects\Movies\MovieDetailsData;
 use Rosebud\Enums\ExternalSourcesEnum;
 
 class Movie extends Tmdb
@@ -16,6 +16,15 @@ class Movie extends Tmdb
         return $data ?? null;
     }
 
+    public function details(int $id, int $times = 2, int $sleep = 2000): MovieDetailsData
+    {
+        $data = $this->get($this->base_url.'/movie/'.$id, [
+            'append_to_response' => 'alternative_titles,credits,external_ids,images,keywords,latest,recommendations,release_dates,reviews,similar,releases,translations,videos,providers',
+        ], $times, $sleep);
+
+        return MovieDetailsData::fromArray($data);
+    }
+
     public function popular(int $page = 1, int $times = 2, int $sleep = 2000): Popular
     {
         $data = $this->get($this->base_url.'/movie/popular', [
@@ -23,14 +32,5 @@ class Movie extends Tmdb
         ], $times, $sleep);
 
         return Popular::fromArray($data);
-    }
-
-    public function details(int $id, int $times = 2, int $sleep = 2000): MovieDetailData
-    {
-        $data = $this->get($this->base_url.'/movie/'.$id, [
-            'append_to_response' => 'alternative_titles,credits,external_ids,images,keywords,latest,recommendations,release_dates,reviews,similar,releases,translations,videos,providers',
-        ], $times, $sleep);
-
-        return MovieDetailData::fromArray($data);
     }
 }
