@@ -1,7 +1,7 @@
 <?php
 
 use Rosebud\DataTransferObjects\Movies\MovieData;
-use Rosebud\DataTransferObjects\Movies\MovieDetailData;
+use Rosebud\DataTransferObjects\Movies\MovieDetailsData;
 use Rosebud\DataTransferObjects\People\PersonData;
 use Rosebud\DataTransferObjects\TvEpisodes\TvEpisodeData;
 use Rosebud\DataTransferObjects\TvSeries\TvShowData;
@@ -22,9 +22,9 @@ it('can create a movie data transfer object and then back to matching array', fu
 })->with('movies');
 
 it('can create a movie detail data transfer object and then back to matching array', function (array $movie) {
-    $movie_data = MovieDetailData::fromArray($movie);
+    $movie_data = MovieDetailsData::fromArray($movie);
 
-    expect($movie_data)->toBeInstanceOf(MovieDetailData::class);
+    expect($movie_data)->toBeInstanceOf(MovieDetailsData::class);
 
     $reflection = new ReflectionClass($movie_data);
     $properties = array_map(fn($property) => $property->getName(), $reflection->getProperties());

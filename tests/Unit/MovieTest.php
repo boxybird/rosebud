@@ -2,7 +2,7 @@
 
 use Rosebud\DataTransferObjects\MovieLists\Popular;
 use Rosebud\DataTransferObjects\Movies\MovieData;
-use Rosebud\DataTransferObjects\Movies\MovieDetailData;
+use Rosebud\DataTransferObjects\Movies\MovieDetailsData;
 use Rosebud\Movie;
 
 it('finds movie by imdb id', function () {
@@ -20,7 +20,7 @@ it('can get movie details', function () {
 
     $movie = (new Movie(api_key: $api_key))->details(924); // Dawn of the Dead (2004)
 
-    expect($movie)->toBeInstanceOf(MovieDetailData::class);
+    expect($movie)->toBeInstanceOf(MovieDetailsData::class);
 });
 
 
