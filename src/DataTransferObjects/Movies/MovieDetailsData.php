@@ -6,7 +6,7 @@ namespace Rosebud\DataTransferObjects\Movies;
 
 use Rosebud\DataTransferObjects\ComputedData;
 
-final readonly class MovieDetailData
+final readonly class MovieDetailsData
 {
     public function __construct(
         public bool $adult,
