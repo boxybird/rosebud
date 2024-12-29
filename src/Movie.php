@@ -13,7 +13,7 @@ class Movie extends Tmdb
     {
         $data = $this->findByID($id, $external_source, $times, $sleep);
 
-        return $data ?? null;
+        return $data instanceof MovieData ? $data : null;
     }
 
     public function details(int $id, int $times = 2, int $sleep = 2000): MovieDetailsData
