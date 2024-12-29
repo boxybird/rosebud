@@ -5,6 +5,7 @@ use Rosebud\DataTransferObjects\Movies\MovieDetailsData;
 use Rosebud\DataTransferObjects\People\PersonData;
 use Rosebud\DataTransferObjects\TvEpisodes\TvEpisodeData;
 use Rosebud\DataTransferObjects\TvSeries\TvShowData;
+use Rosebud\DataTransferObjects\TvSeries\TvShowDetailsData;
 
 it('can create a movie data transfer object and then back to matching array', function (array $movie) {
     $movie_data = MovieData::fromArray($movie);
@@ -62,6 +63,20 @@ it('can create a tv show data transfer object and then back to matching array', 
     expect($tv_show_array)->toBeArray()
         ->and($tv_show_array)->toHaveKeys($properties);
 })->with('tv shows');
+
+it('can create a tv show detail data transfer object and then back to matching array', function (array $tv_show) {
+    $tv_show_data = TvShowDetailsData::fromArray($tv_show);
+
+    expect($tv_show_data)->toBeInstanceOf(TvShowDetailsData::class);
+
+    $reflection = new ReflectionClass($tv_show_data);
+    $properties = array_map(fn($property) => $property->getName(), $reflection->getProperties());
+
+    $tv_show_array = $tv_show_data->toArray();
+
+    expect($tv_show_array)->toBeArray()
+        ->and($tv_show_array)->toHaveKeys($properties);
+})->with('tv show details');
 
 it('can create a tv episode data transfer object and then back to matching array', function (array $tv_episode) {
     $tv_episode_data = TvEpisodeData::fromArray($tv_episode);
