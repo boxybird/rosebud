@@ -1,75 +1,75 @@
 {
-    "id": 1532,
-    "name": "Bill Murray",
-    "original_name": "Bill Murray",
-    "media_type": "person",
-    "adult": false,
-    "popularity": 29.88,
-    "gender": 2,
-    "known_for_department": "Acting",
-    "profile_path": "\/nnCsJc9x3ZiG3AFyiyc3FPehppy.jpg",
-    "known_for": [
-        {
-            "backdrop_path": "\/c6yfABGVKuB5cjoOwdX4AJMlzUz.jpg",
-            "id": 620,
-            "title": "Ghostbusters",
-            "original_title": "Ghostbusters",
-            "overview": "After losing their academic posts at a prestigious university, a team of parapsychologists goes into business as proton-pack-toting \"ghostbusters\" who exterminate ghouls, hobgoblins and supernatural pests of all stripes. An ad campaign pays off when a knockout cellist hires the squad to purge her swanky digs of demons that appear to be living in her refrigerator.",
-            "poster_path": "\/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg",
-            "media_type": "movie",
-            "adult": false,
-            "original_language": "en",
-            "genre_ids": [
-                35,
-                14
-            ],
-            "popularity": 52.056,
-            "release_date": "1984-06-08",
-            "video": false,
-            "vote_average": 7.489,
-            "vote_count": 8936
-        },
-        {
-            "backdrop_path": "\/ttBydD0SynC0TMkW3AcnmsySkLp.jpg",
-            "id": 137,
-            "title": "Groundhog Day",
-            "original_title": "Groundhog Day",
-            "overview": "A narcissistic TV weatherman, along with his attractive-but-distant producer, and his mawkish cameraman, is sent to report on Groundhog Day in the small town of Punxsutawney, where he finds himself repeating the same day over and over.",
-            "poster_path": "\/h1ZEBoi0waPwtAPU1cnSZifdqZh.jpg",
-            "media_type": "movie",
-            "adult": false,
-            "original_language": "en",
-            "genre_ids": [
-                10749,
-                14,
-                18,
-                35
-            ],
-            "popularity": 35.505,
-            "release_date": "1993-02-11",
-            "video": false,
-            "vote_average": 7.609,
-            "vote_count": 7988
-        },
-        {
-            "backdrop_path": "\/45He7gApNQyDbqCDjxew9BnHzjf.jpg",
-            "id": 153,
-            "title": "Lost in Translation",
-            "original_title": "Lost in Translation",
-            "overview": "Two lost souls visiting Tokyo -- the young, neglected wife of a photographer and a washed-up movie star shooting a TV commercial -- find an odd solace and pensive freedom to be real in each other's company, away from their lives in America.",
-            "poster_path": "\/wkSzJs7oMf8MIr9CQVICsvRfwA7.jpg",
-            "media_type": "movie",
-            "adult": false,
-            "original_language": "en",
-            "genre_ids": [
-                18,
-                10749
-            ],
-            "popularity": 41.083,
-            "release_date": "2003-09-18",
-            "video": false,
-            "vote_average": 7.387,
-            "vote_count": 7321
-        }
-    ]
+  "id": 1532,
+  "name": "Bill Murray",
+  "original_name": "Bill Murray",
+  "media_type": "person",
+  "adult": false,
+  "popularity": 29.88,
+  "gender": 2,
+  "known_for_department": "Acting",
+  "profile_path": "\/nnCsJc9x3ZiG3AFyiyc3FPehppy.jpg",
+  "known_for": [
+    {
+      "backdrop_path": "\/c6yfABGVKuB5cjoOwdX4AJMlzUz.jpg",
+      "id": 620,
+      "title": "Ghostbusters",
+      "original_title": "Ghostbusters",
+      "overview": "After losing their academic posts at a prestigious university, a team of parapsychologists goes into business as proton-pack-toting \"ghostbusters\" who exterminate ghouls, hobgoblins and supernatural pests of all stripes. An ad campaign pays off when a knockout cellist hires the squad to purge her swanky digs of demons that appear to be living in her refrigerator.",
+      "poster_path": "\/7E8nLijS9AwwUEPu2oFYOVKhdFA.jpg",
+      "media_type": "movie",
+      "adult": false,
+      "original_language": "en",
+      "genre_ids": [
+        35,
+        14
+      ],
+      "popularity": 52.056,
+      "release_date": "1984-06-08",
+      "video": false,
+      "vote_average": 7.489,
+      "vote_count": 8936
+    },
+    {
+      "backdrop_path": "\/ttBydD0SynC0TMkW3AcnmsySkLp.jpg",
+      "id": 137,
+      "title": "Groundhog Day",
+      "original_title": "Groundhog Day",
+      "overview": "A narcissistic TV weatherman, along with his attractive-but-distant producer, and his mawkish cameraman, is sent to report on Groundhog Day in the small town of Punxsutawney, where he finds himself repeating the same day over and over.",
+      "poster_path": "\/h1ZEBoi0waPwtAPU1cnSZifdqZh.jpg",
+      "media_type": "movie",
+      "adult": false,
+      "original_language": "en",
+      "genre_ids": [
+        10749,
+        14,
+        18,
+        35
+      ],
+      "popularity": 35.505,
+      "release_date": "1993-02-11",
+      "video": false,
+      "vote_average": 7.609,
+      "vote_count": 7988
+    },
+    {
+      "backdrop_path": "\/45He7gApNQyDbqCDjxew9BnHzjf.jpg",
+      "id": 153,
+      "title": "Lost in Translation",
+      "original_title": "Lost in Translation",
+      "overview": "Two lost souls visiting Tokyo -- the young, neglected wife of a photographer and a washed-up movie star shooting a TV commercial -- find an odd solace and pensive freedom to be real in each other's company, away from their lives in America.",
+      "poster_path": "\/wkSzJs7oMf8MIr9CQVICsvRfwA7.jpg",
+      "media_type": "movie",
+      "adult": false,
+      "original_language": "en",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "popularity": 41.083,
+      "release_date": "2003-09-18",
+      "video": false,
+      "vote_average": 7.387,
+      "vote_count": 7321
+    }
+  ]
 }
