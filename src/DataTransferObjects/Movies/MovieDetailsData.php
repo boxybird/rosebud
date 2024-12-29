@@ -5,6 +5,15 @@ declare(strict_types=1);
 namespace Rosebud\DataTransferObjects\Movies;
 
 use Rosebud\DataTransferObjects\ComputedData;
+use Rosebud\DataTransferObjects\Shared\AlternativeTitlesData;
+use Rosebud\DataTransferObjects\Shared\CreditsData;
+use Rosebud\DataTransferObjects\Shared\ExternalIdsData;
+use Rosebud\DataTransferObjects\Shared\GenreData;
+use Rosebud\DataTransferObjects\Shared\KeywordsData;
+use Rosebud\DataTransferObjects\Shared\ProductionCompanyData;
+use Rosebud\DataTransferObjects\Shared\ProductionCountryData;
+use Rosebud\DataTransferObjects\Shared\SpokenLanguageData;
+use Rosebud\DataTransferObjects\Shared\TranslationsData;
 
 final readonly class MovieDetailsData
 {
