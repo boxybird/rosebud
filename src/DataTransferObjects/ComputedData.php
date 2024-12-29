@@ -18,6 +18,7 @@ final class ComputedData
         public array $profile_paths = [],
         public array $still_paths = [],
         public array $logo_paths = [],
+        public array $file_paths = [],
     ) {
         $this->setPaths();
     }
@@ -35,6 +36,7 @@ final class ComputedData
             'profile_paths' => $this->profile_paths,
             'still_paths' => $this->still_paths,
             'logo_paths' => $this->logo_paths,
+            'file_paths' => $this->file_paths,
         ];
     }
 
