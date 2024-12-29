@@ -11,4 +11,5 @@ enum ImagePathNamesEnum: string
     case PROFILE = 'profile_path';
     case STILL = 'still_path';
     case LOGO = 'logo_path';
+    case FILE = 'file_path';
 }
