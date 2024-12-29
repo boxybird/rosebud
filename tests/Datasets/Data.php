@@ -26,8 +26,8 @@ dataset('tv shows', [
 ]);
 
 dataset('tv show details', [
-    [getResponse('wings-details.json')],
-    [getResponse('mythbusters-details.json')],
+//    [getResponse('wings-details.json')],
+//    [getResponse('mythbusters-details.json')],
     [getResponse('breaking-bad-details.json')],
 ]);
 
