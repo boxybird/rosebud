@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Rosebud\DataTransferObjects\Movies;
 
+use Rosebud\DataTransferObjects\ComputedData;
+
 final readonly class SimilarMovieData
 {
     public function __construct(
@@ -22,6 +24,7 @@ final readonly class SimilarMovieData
         public bool $video,
         public float $vote_average,
         public int $vote_count,
+        public ComputedData $computed
     ) {
     }
 
@@ -42,6 +45,7 @@ final readonly class SimilarMovieData
             video: $data['video'],
             vote_average: $data['vote_average'],
             vote_count: $data['vote_count'],
+            computed: ComputedData::fromArray($data),
         );
     }
 
@@ -62,6 +66,7 @@ final readonly class SimilarMovieData
             'video' => $this->video,
             'vote_average' => $this->vote_average,
             'vote_count' => $this->vote_count,
+            'computed' => $this->computed->toArray(),
         ];
     }
 }
