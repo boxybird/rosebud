@@ -2,14 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects\Movies;
+namespace Rosebud\DataTransferObjects\Shared;
 
-final readonly class AlternativeTitleData
+final readonly class ProductionCountryData
 {
     public function __construct(
         public string $iso_3166_1,
-        public string $title,
-        public string $type,
+        public string $name
     ) {
     }
 
@@ -17,8 +16,7 @@ final readonly class AlternativeTitleData
     {
         return new self(
             iso_3166_1: $data['iso_3166_1'],
-            title: $data['title'],
-            type: $data['type'],
+            name: $data['name']
         );
     }
 
@@ -26,8 +24,7 @@ final readonly class AlternativeTitleData
     {
         return [
             'iso_3166_1' => $this->iso_3166_1,
-            'title' => $this->title,
-            'type' => $this->type,
+            'name' => $this->name
         ];
     }
 }

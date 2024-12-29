@@ -2,16 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects\Movies;
+namespace Rosebud\DataTransferObjects\Shared;
 
 final readonly class TranslationDataContent
 {
     public function __construct(
         public string $homepage,
         public string $overview,
-        public int $runtime,
+        public ?int $runtime,
         public string $tagline,
-        public string $title,
+        public ?string $title,
+        public ?string $name,
     ) {
     }
 
@@ -20,9 +21,10 @@ final readonly class TranslationDataContent
         return new self(
             homepage: $data['homepage'],
             overview: $data['overview'],
-            runtime: $data['runtime'],
+            runtime: $data['runtime'] ?? null,
             tagline: $data['tagline'],
-            title: $data['title'],
+            title: $data['title'] ?? null,
+            name: $data['name'] ?? null,
         );
     }
 
@@ -34,6 +36,7 @@ final readonly class TranslationDataContent
             'runtime' => $this->runtime,
             'tagline' => $this->tagline,
             'title' => $this->title,
+            'name' => $this->name,
         ];
     }
 }

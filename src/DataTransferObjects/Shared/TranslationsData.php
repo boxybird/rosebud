@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects\Movies;
+namespace Rosebud\DataTransferObjects\Shared;
 
 final readonly class TranslationsData
 {

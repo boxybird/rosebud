@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects\Movies;
+namespace Rosebud\DataTransferObjects\Shared;
 
 final readonly class AlternativeTitlesData
 {
@@ -15,7 +15,7 @@ final readonly class AlternativeTitlesData
     public static function fromArray(array $data): self
     {
         return new self(
-            titles: array_map(fn(array $title) => AlternativeTitleData::fromArray($title), $data['titles']),
+            titles: array_map(fn(array $title) => AlternativeTitleData::fromArray($title), $data['titles'] ?? $data['results']),
         );
     }
 

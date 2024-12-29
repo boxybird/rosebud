@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects\Movies;
+namespace Rosebud\DataTransferObjects\Shared;
 
 use Rosebud\DataTransferObjects\ComputedData;
 
@@ -17,7 +17,7 @@ final readonly class CastMemberData
         public string $original_name,
         public float $popularity,
         public ?string $profile_path,
-        public int $cast_id,
+        public ?int $cast_id,
         public string $character,
         public string $credit_id,
         public int $order,

@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Rosebud\DataTransferObjects\Movies;
+namespace Rosebud\DataTransferObjects\Shared;
 
-final readonly class GenreData
+final readonly class SpokenLanguageData
 {
     public function __construct(
-        public int $id,
+        public string $english_name,
+        public string $iso_639_1,
         public string $name
     ) {
     }
@@ -15,7 +16,8 @@ final readonly class GenreData
     public static function fromArray(array $data): self
     {
         return new self(
-            id: $data['id'],
+            english_name: $data['english_name'],
+            iso_639_1: $data['iso_639_1'],
             name: $data['name']
         );
     }
@@ -23,7 +25,8 @@ final readonly class GenreData
     public function toArray(): array
     {
         return [
-            'id' => $this->id,
+            'english_name' => $this->english_name,
+            'iso_639_1' => $this->iso_639_1,
             'name' => $this->name
         ];
     }
