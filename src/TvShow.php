@@ -8,19 +8,17 @@ use Rosebud\Enums\ExternalSourcesEnum;
 
 class TvShow extends Tmdb
 {
-    public function find(string $id, ExternalSourcesEnum $external_source = ExternalSourcesEnum::IMDB, int $times = 2, int $sleep = 2000): TvShowData|null
+    public function find(string $id, ExternalSourcesEnum $external_source = ExternalSourcesEnum::IMDB, bool $raw = false, int $times = 2, int $sleep = 2000): TvShowData|array|null
     {
-        $data = $this->findByID($id, $external_source, $times, $sleep);
-
-        return $data instanceof TvShowData ? $data : null;
+        return $this->findByID($id, $external_source, $raw, $times, $sleep);
     }
 
-    public function details(int $id, int $times = 2, int $sleep = 2000): TvShowDetailsData
+    public function details(int $id, bool $raw = false, int $times = 2, int $sleep = 2000): TvShowDetailsData|array
     {
         $data = $this->get($this->base_url.'/tv/'.$id, [
             'append_to_response' => 'aggregate_credits,alternative_titles,content_ratings,credits,external_ids,images,keywords,recommendations,reviews,screened_theatrically,similar,translations,videos',
         ], $times, $sleep);
 
-        return TvShowDetailsData::fromArray($data);
+        return $raw ? $data : TvShowDetailsData::fromArray($data);
     }
 }

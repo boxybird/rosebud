@@ -24,7 +24,7 @@ class Tmdb
         ];
     }
 
-    public function findByID(string $external_id, ExternalSourcesEnum $external_source = ExternalSourcesEnum::IMDB, int $times = 2, int $sleep = 2000): MovieData|PersonData|TvShowData|TvEpisodeData|null
+    public function findByID(string $external_id, ExternalSourcesEnum $external_source = ExternalSourcesEnum::IMDB, bool $raw = false, int $times = 2, int $sleep = 2000): MovieData|PersonData|TvShowData|TvEpisodeData|array|null
     {
         $results = $this->get($this->base_url.'/find/'.$external_id, [
             'external_source' => $external_source->value,
@@ -42,10 +42,10 @@ class Tmdb
         }
 
         return match ($key) {
-            'movie_results' => MovieData::fromArray($data),
-            'person_results' => PersonData::fromArray($data),
-            'tv_results' => TvShowData::fromArray($data),
-            'tv_episode_results' => TvEpisodeData::fromArray($data),
+            'movie_results' => $raw ? $data : MovieData::fromArray($data),
+            'person_results' => $raw ? $data : PersonData::fromArray($data),
+            'tv_results' => $raw ? $data : TvShowData::fromArray($data),
+            'tv_episode_results' => $raw ? $data : TvEpisodeData::fromArray($data),
             default => null
         };
     }
