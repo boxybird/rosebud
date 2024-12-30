@@ -51,7 +51,7 @@ it('get popular movies', function () {
     $movies = (new Movie(api_key: $api_key))->popular(raw: true);
 
     expect($movies)
-        ->toBeArray(Popular::class);
+        ->toBeArray();
 });
 
 
