@@ -10,4 +10,5 @@ enum MediaTypesEnum: string
     case TV = 'tv';
     case TV_EPISODE = 'tv_episode';
     case PERSON = 'person';
+    case COLLECTION = 'collection';
 }
