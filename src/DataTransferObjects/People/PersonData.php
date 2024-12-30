@@ -12,16 +12,16 @@ final readonly class PersonData
 {
     public function __construct(
         public int $id,
-        public string $name,
-        public string $original_name,
+        public ?string $name,
+        public ?string $original_name,
         public ?MediaTypesEnum $media_type,
-        public bool $adult,
-        public float $popularity,
-        public int $gender,
-        public string $known_for_department,
-        public string $profile_path,
+        public ?bool $adult,
+        public ?float $popularity,
+        public ?int $gender,
+        public ?string $known_for_department,
+        public ?string $profile_path,
         /** @var MovieData[] */
-        public array $known_for,
+        public ?array $known_for,
         public ComputedData $computed
     ) {
     }
@@ -30,15 +30,15 @@ final readonly class PersonData
     {
         return new self(
             id: $data['id'],
-            name: $data['name'],
-            original_name: $data['original_name'],
+            name: $data['name'] ?? null,
+            original_name: $data['original_name'] ?? null,
             media_type: $data['media_type'] ?? null ? MediaTypesEnum::from($data['media_type']) : null,
-            adult: $data['adult'],
-            popularity: $data['popularity'],
-            gender: $data['gender'],
-            known_for_department: $data['known_for_department'],
-            profile_path: $data['profile_path'],
-            known_for: array_map(fn(array $movie) => MovieData::fromArray($movie), $data['known_for']),
+            adult: $data['adult'] ?? null,
+            popularity: $data['popularity'] ?? null,
+            gender: $data['gender'] ?? null,
+            known_for_department: $data['known_for_department'] ?? null,
+            profile_path: $data['profile_path'] ?? null,
+            known_for: $data['known_for'] ?? null ? array_map(fn(array $movie) => MovieData::fromArray($movie), $data['known_for']) : null,
             computed: ComputedData::fromArray($data),
         );
     }
@@ -55,7 +55,7 @@ final readonly class PersonData
             'gender' => $this->gender,
             'known_for_department' => $this->known_for_department,
             'profile_path' => $this->profile_path,
-            'known_for' => array_map(fn(MovieData $movie) => $movie->toArray(), $this->known_for),
+            'known_for' => $this->known_for ? array_map(fn(MovieData $movie) => $movie->toArray(), $this->known_for) : null,
             'computed' => $this->computed->toArray(),
         ];
     }

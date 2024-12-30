@@ -11,7 +11,7 @@ final readonly class CreatedByData
         public string $credit_id,
         public string $name,
         public int $gender,
-        public string $profile_path,
+        public ?string $profile_path,
         public ComputedData $computed
     ) {
     }
@@ -23,7 +23,7 @@ final readonly class CreatedByData
             credit_id: $data['credit_id'],
             name: $data['name'],
             gender: $data['gender'],
-            profile_path: $data['profile_path'],
+            profile_path: $data['profile_path'] ?? null,
             computed: ComputedData::fromArray($data),
         );
     }

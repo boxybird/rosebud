@@ -4,7 +4,7 @@ namespace Rosebud\DataTransferObjects\TvSeries;
 
 use Rosebud\DataTransferObjects\ComputedData;
 
-final readonly class LastEpisodeToAir
+final readonly class LastEpisodeToAirData
 {
     public function __construct(
         public int $id,
@@ -16,7 +16,7 @@ final readonly class LastEpisodeToAir
         public int $episode_number,
         public string $episode_type,
         public string $production_code,
-        public int $runtime,
+        public ?int $runtime,
         public int $season_number,
         public int $show_id,
         public ?string $still_path,
@@ -36,7 +36,7 @@ final readonly class LastEpisodeToAir
             episode_number: $data['episode_number'],
             episode_type: $data['episode_type'],
             production_code: $data['production_code'],
-            runtime: $data['runtime'],
+            runtime: $data['runtime'] ?? null,
             season_number: $data['season_number'],
             show_id: $data['show_id'],
             still_path: $data['still_path'] ?? null,

@@ -7,7 +7,7 @@ use Rosebud\DataTransferObjects\ComputedData;
 final readonly class SeasonData
 {
     public function __construct(
-        public string $air_date,
+        public ?string $air_date,
         public int $episode_count,
         public int $id,
         public string $name,
@@ -22,7 +22,7 @@ final readonly class SeasonData
     public static function fromArray(array $data): self
     {
         return new self(
-            air_date: $data['air_date'],
+            air_date: $data['air_date'] ?? null,
             episode_count: $data['episode_count'],
             id: $data['id'],
             name: $data['name'],

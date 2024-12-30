@@ -23,6 +23,21 @@ final class ComputedData
         $this->setPaths();
     }
 
+    protected function setPaths(): void
+    {
+        foreach (ImagePathNamesEnum::cases() as $name) {
+            $name_path = $this->data[$name->value] ?? null;
+
+            if (!$name_path) {
+                continue;
+            }
+
+            foreach (ImageSizesEnum::cases() as $size) {
+                $this->{$name->value.'s'}[$size->value] = $this->base_url.$size->value.$name_path;
+            }
+        }
+    }
+
     public static function fromArray(array $data): self
     {
         return new self($data);
@@ -38,20 +53,5 @@ final class ComputedData
             'logo_paths' => $this->logo_paths,
             'file_paths' => $this->file_paths,
         ];
-    }
-
-    protected function setPaths(): void
-    {
-        foreach (ImagePathNamesEnum::cases() as $name) {
-            $name_path = $this->data[$name->value] ?? null;
-
-            if (!$name_path) {
-                continue;
-            }
-
-            foreach (ImageSizesEnum::cases() as $size) {
-                $this->{$name->value.'s'}[$size->value] = $this->base_url.$size->value.$name_path;
-            }
-        }
     }
 }

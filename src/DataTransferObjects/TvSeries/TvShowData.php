@@ -10,22 +10,22 @@ use Rosebud\Enums\MediaTypesEnum;
 final readonly class TvShowData
 {
     public function __construct(
-        public string $backdrop_path,
+        public ?string $backdrop_path,
         public int $id,
-        public string $name,
-        public string $original_name,
-        public string $overview,
-        public string $poster_path,
+        public ?string $name,
+        public ?string $original_name,
+        public ?string $overview,
+        public ?string $poster_path,
         public ?MediaTypesEnum $media_type,
-        public bool $adult,
-        public string $original_language,
+        public ?bool $adult,
+        public ?string $original_language,
         /** @var int[] */
-        public array $genre_ids,
-        public float $popularity,
-        public string $first_air_date,
-        public float $vote_average,
-        public int $vote_count,
-        public array $origin_country,
+        public ?array $genre_ids,
+        public ?float $popularity,
+        public ?string $first_air_date,
+        public ?float $vote_average,
+        public ?int $vote_count,
+        public ?array $origin_country,
         public ComputedData $computed
     ) {
     }
@@ -33,21 +33,21 @@ final readonly class TvShowData
     public static function fromArray(array $data): self
     {
         return new self(
-            backdrop_path: $data['backdrop_path'],
+            backdrop_path: $data['backdrop_path'] ?? null,
             id: $data['id'],
-            name: $data['name'],
-            original_name: $data['original_name'],
-            overview: $data['overview'],
-            poster_path: $data['poster_path'],
+            name: $data['name'] ?? null,
+            original_name: $data['original_name'] ?? null,
+            overview: $data['overview'] ?? null,
+            poster_path: $data['poster_path'] ?? null,
             media_type: $data['media_type'] ?? null ? MediaTypesEnum::from($data['media_type']) : null,
-            adult: $data['adult'],
-            original_language: $data['original_language'],
-            genre_ids: $data['genre_ids'],
-            popularity: $data['popularity'],
-            first_air_date: $data['first_air_date'],
-            vote_average: $data['vote_average'],
-            vote_count: $data['vote_count'],
-            origin_country: $data['origin_country'],
+            adult: $data['adult'] ?? null,
+            original_language: $data['original_language'] ?? null,
+            genre_ids: $data['genre_ids'] ?? null,
+            popularity: $data['popularity'] ?? null,
+            first_air_date: $data['first_air_date'] ?? null,
+            vote_average: $data['vote_average'] ?? null,
+            vote_count: $data['vote_count'] ?? null,
+            origin_country: $data['origin_country'] ?? null,
             computed: ComputedData::fromArray($data),
         );
     }
