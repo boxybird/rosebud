@@ -1,10 +1,8 @@
 <?php
 
-namespace Rosebud\DataTransferObjects\MovieLists;
+namespace Rosebud\DataTransferObjects\Movies;
 
-use Rosebud\DataTransferObjects\Movies\MovieData;
-
-final readonly class Popular
+final readonly class MovieListData
 {
     public function __construct(
         public int $page,
