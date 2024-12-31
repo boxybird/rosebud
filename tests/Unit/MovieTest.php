@@ -1,8 +1,8 @@
 <?php
 
-use Rosebud\DataTransferObjects\MovieLists\Popular;
 use Rosebud\DataTransferObjects\Movies\MovieData;
 use Rosebud\DataTransferObjects\Movies\MovieDetailsData;
+use Rosebud\DataTransferObjects\Movies\MovieListData;
 use Rosebud\Movie;
 
 it('finds movie by imdb id', function () {
@@ -45,7 +45,7 @@ it('can get movie details and return dto', function () {
         ->toBeInstanceOf(MovieDetailsData::class);
 });
 
-it('get popular movies', function () {
+it('can get popular movies', function () {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movies = (new Movie(api_key: $api_key))->popular(raw: true);
@@ -55,12 +55,31 @@ it('get popular movies', function () {
 });
 
 
-it('get popular movies and return dto', function () {
+it('can get popular movies and return dto', function () {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movies = (new Movie(api_key: $api_key))->popular();
 
     expect($movies)
-        ->toBeInstanceOf(Popular::class);
+        ->toBeInstanceOf(MovieListData::class);
 });
+
+it('can search for movies', function () {
+    $api_key = getTestingEnv('TMDB_API_KEY');
+
+    $movies = (new Movie(api_key: $api_key))->search('zombie', raw: true);
+
+    expect($movies)
+        ->toBeArray();
+});
+
+it('can search for movies and return dto', function () {
+    $api_key = getTestingEnv('TMDB_API_KEY');
+
+    $movies = (new Movie(api_key: $api_key))->search('zombie');
+
+    expect($movies)
+        ->toBeInstanceOf(MovieListData::class);
+});
+
 
