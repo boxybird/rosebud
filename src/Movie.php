@@ -75,7 +75,7 @@ class Movie extends Tmdb
         $default_query_params = [
             'page' => 1,
             'include_adult' => false,
-            'language' => '',
+            'language' => 'en-US',
             'primary_release_year' => '',
             'region' => '',
             'year' => ''
