@@ -13,10 +13,16 @@ dataset('movie details', [
     [getResponse('pink-flamingos.json')],
 ]);
 
-dataset('people', [
+dataset('person', [
     [getResponse('orson-welles.json')],
     [getResponse('bill-murray.json')],
     [getResponse('brad-pitt.json')],
+]);
+
+dataset('person details', [
+    [getResponse('orson-welles-details.json')],
+    [getResponse('bill-murray-details.json')],
+    [getResponse('brad-pitt-details.json')],
 ]);
 
 dataset('tv shows', [
@@ -26,8 +32,8 @@ dataset('tv shows', [
 ]);
 
 dataset('tv show details', [
-//    [getResponse('wings-details.json')],
-//    [getResponse('mythbusters-details.json')],
+    [getResponse('wings-details.json')],
+    [getResponse('mythbusters-details.json')],
     [getResponse('breaking-bad-details.json')],
 ]);
 
