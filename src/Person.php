@@ -41,6 +41,3 @@ class Person extends Tmdb
         ]);
     }
 }
-
-
-//combined_credits
