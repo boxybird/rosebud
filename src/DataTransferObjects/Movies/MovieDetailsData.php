@@ -9,6 +9,7 @@ use Rosebud\DataTransferObjects\Shared\AlternativeTitlesData;
 use Rosebud\DataTransferObjects\Shared\CreditsData;
 use Rosebud\DataTransferObjects\Shared\ExternalIdsData;
 use Rosebud\DataTransferObjects\Shared\GenreData;
+use Rosebud\DataTransferObjects\Shared\ImagesData;
 use Rosebud\DataTransferObjects\Shared\KeywordsData;
 use Rosebud\DataTransferObjects\Shared\ProductionCompanyData;
 use Rosebud\DataTransferObjects\Shared\ProductionCountryData;
