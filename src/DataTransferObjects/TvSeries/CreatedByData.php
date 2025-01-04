@@ -3,6 +3,7 @@
 namespace Rosebud\DataTransferObjects\TvSeries;
 
 use Rosebud\DataTransferObjects\ComputedData;
+use Rosebud\Enums\GendersEnum;
 
 final readonly class CreatedByData
 {
@@ -10,7 +11,7 @@ final readonly class CreatedByData
         public int $id,
         public string $credit_id,
         public string $name,
-        public int $gender,
+        public ?GendersEnum $gender,
         public ?string $profile_path,
         public ComputedData $computed
     ) {
@@ -22,7 +23,7 @@ final readonly class CreatedByData
             id: $data['id'],
             credit_id: $data['credit_id'],
             name: $data['name'],
-            gender: $data['gender'],
+            gender: $data['gender'] ?? null ? GendersEnum::fromInt($data['gender']) : null,
             profile_path: $data['profile_path'] ?? null,
             computed: ComputedData::fromArray($data),
         );
@@ -34,7 +35,7 @@ final readonly class CreatedByData
             'id' => $this->id,
             'credit_id' => $this->credit_id,
             'name' => $this->name,
-            'gender' => $this->gender,
+            'gender' => $this->gender?->getName(),
             'profile_path' => $this->profile_path,
             'computed' => $this->computed->toArray(),
         ];

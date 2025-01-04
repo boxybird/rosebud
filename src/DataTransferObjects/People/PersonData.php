@@ -6,6 +6,7 @@ namespace Rosebud\DataTransferObjects\People;
 
 use Rosebud\DataTransferObjects\ComputedData;
 use Rosebud\DataTransferObjects\Movies\MovieData;
+use Rosebud\Enums\GendersEnum;
 use Rosebud\Enums\MediaTypesEnum;
 
 final readonly class PersonData
@@ -17,7 +18,7 @@ final readonly class PersonData
         public ?MediaTypesEnum $media_type,
         public ?bool $adult,
         public ?float $popularity,
-        public ?int $gender,
+        public ?GendersEnum $gender,
         public ?string $known_for_department,
         public ?string $profile_path,
         /** @var MovieData[] */
@@ -35,7 +36,7 @@ final readonly class PersonData
             media_type: $data['media_type'] ?? null ? MediaTypesEnum::from($data['media_type']) : null,
             adult: $data['adult'] ?? null,
             popularity: $data['popularity'] ?? null,
-            gender: $data['gender'] ?? null,
+            gender: $data['gender'] ?? null ? GendersEnum::fromInt($data['gender']) : null,
             known_for_department: $data['known_for_department'] ?? null,
             profile_path: $data['profile_path'] ?? null,
             known_for: $data['known_for'] ?? null ? array_map(fn(array $movie) => MovieData::fromArray($movie), $data['known_for']) : null,
@@ -52,7 +53,7 @@ final readonly class PersonData
             'media_type' => $this->media_type?->value,
             'adult' => $this->adult,
             'popularity' => $this->popularity,
-            'gender' => $this->gender,
+            'gender' => $this->gender?->getName(),
             'known_for_department' => $this->known_for_department,
             'profile_path' => $this->profile_path,
             'known_for' => $this->known_for ? array_map(fn(MovieData $movie) => $movie->toArray(), $this->known_for) : null,

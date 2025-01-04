@@ -5,12 +5,13 @@ declare(strict_types=1);
 namespace Rosebud\DataTransferObjects\Shared;
 
 use Rosebud\DataTransferObjects\ComputedData;
+use Rosebud\Enums\GendersEnum;
 
 final readonly class CastMemberData
 {
     public function __construct(
         public bool $adult,
-        public int $gender,
+        public ?GendersEnum $gender,
         public int $id,
         public string $known_for_department,
         public string $name,
@@ -29,7 +30,7 @@ final readonly class CastMemberData
     {
         return new self(
             adult: $data['adult'],
-            gender: $data['gender'],
+            gender: $data['gender'] ?? null ? GendersEnum::fromInt($data['gender']) : null,
             id: $data['id'],
             known_for_department: $data['known_for_department'],
             name: $data['name'],
@@ -48,7 +49,7 @@ final readonly class CastMemberData
     {
         return [
             'adult' => $this->adult,
-            'gender' => $this->gender,
+            'gender' => $this->gender?->getName(),
             'id' => $this->id,
             'known_for_department' => $this->known_for_department,
             'name' => $this->name,

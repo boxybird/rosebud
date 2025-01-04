@@ -8,6 +8,7 @@ use Rosebud\DataTransferObjects\ComputedData;
 use Rosebud\DataTransferObjects\Shared\ExternalIdsData;
 use Rosebud\DataTransferObjects\Shared\ImagesData;
 use Rosebud\DataTransferObjects\Shared\TranslationsData;
+use Rosebud\Enums\GendersEnum;
 
 final readonly class PersonDetailsData
 {
@@ -18,7 +19,7 @@ final readonly class PersonDetailsData
         public ?string $biography,
         public ?string $birthday,
         public ?string $deathday,
-        public ?int $gender,
+        public ?GendersEnum $gender,
         public ?string $homepage,
         public int $id,
         public ?string $imdb_id,
@@ -44,7 +45,7 @@ final readonly class PersonDetailsData
             biography: $data['biography'] ?? null,
             birthday: $data['birthday'] ?? null,
             deathday: $data['deathday'] ?? null,
-            gender: $data['gender'] ?? null,
+            gender: $data['gender'] ?? null ? GendersEnum::fromInt($data['gender']) : null,
             homepage: $data['homepage'] ?? null,
             id: $data['id'],
             imdb_id: $data['imdb_id'] ?? null,
@@ -69,7 +70,7 @@ final readonly class PersonDetailsData
             'biography' => $this->biography,
             'birthday' => $this->birthday,
             'deathday' => $this->deathday,
-            'gender' => $this->gender,
+            'gender' => $this->gender?->getName(),
             'homepage' => $this->homepage,
             'id' => $this->id,
             'imdb_id' => $this->imdb_id,
