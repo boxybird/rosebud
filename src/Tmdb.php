@@ -8,7 +8,7 @@ use Rosebud\DataTransferObjects\Movies\MovieData;
 use Rosebud\DataTransferObjects\People\PersonData;
 use Rosebud\DataTransferObjects\TvEpisodes\TvEpisodeData;
 use Rosebud\DataTransferObjects\TvSeries\TvShowData;
-use Rosebud\Enums\ExternalSourcesEnum;
+use Rosebud\Enums\ExternalIdsEnum;
 
 class Tmdb
 {
@@ -30,7 +30,7 @@ class Tmdb
 
     public function findByID(
         string $external_id,
-        ExternalSourcesEnum $external_source = ExternalSourcesEnum::IMDB,
+        ExternalIdsEnum $external_source = ExternalIdsEnum::IMDB,
         bool $raw = false,
         int $times = self::DEFAULT_TIMES,
         int $sleep = self::DEFAULT_SLEEP

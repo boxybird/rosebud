@@ -4,13 +4,13 @@ namespace Rosebud;
 
 use Rosebud\DataTransferObjects\TvSeries\TvShowData;
 use Rosebud\DataTransferObjects\TvSeries\TvShowDetailsData;
-use Rosebud\Enums\ExternalSourcesEnum;
+use Rosebud\Enums\ExternalIdsEnum;
 
 class TvShow extends Tmdb
 {
     public function find(
         string $id,
-        ExternalSourcesEnum $external_source = ExternalSourcesEnum::IMDB,
+        ExternalIdsEnum $external_source = ExternalIdsEnum::IMDB,
         bool $raw = false,
         int $times = self::DEFAULT_TIMES,
         int $sleep = self::DEFAULT_SLEEP
