@@ -16,6 +16,8 @@ final readonly class ExternalIdsData
         public ?string $freebase_id,
         public ?int $tvdb_id,
         public ?int $tvrage_id,
+        public ?string $tiktok_id,
+        public ?string $youtube_id,
     ) {
     }
 
@@ -31,6 +33,8 @@ final readonly class ExternalIdsData
             freebase_id: $data['freebase_id'] ?? null,
             tvdb_id: $data['tvdb_id'] ?? null,
             tvrage_id: $data['tvrage_id'] ?? null,
+            tiktok_id: $data['tiktok_id'] ?? null,
+            youtube_id: $data['youtube_id'] ?? null,
         );
     }
 
@@ -46,6 +50,8 @@ final readonly class ExternalIdsData
             'freebase_id' => $this->freebase_id,
             'tvdb_id' => $this->tvdb_id,
             'tvrage_id' => $this->tvrage_id,
+            'tiktok_id' => $this->tiktok_id,
+            'youtube_id' => $this->youtube_id,
         ];
     }
 }
