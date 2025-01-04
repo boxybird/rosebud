@@ -2,7 +2,7 @@
 
 use Rosebud\DataTransferObjects\TvSeries\TvShowData;
 use Rosebud\DataTransferObjects\TvSeries\TvShowDetailsData;
-use Rosebud\Enums\ExternalSourcesEnum;
+use Rosebud\Enums\ExternalIdsEnum;
 use Rosebud\TvShow;
 
 it('finds tv show by imdb id', function () {
@@ -48,7 +48,7 @@ it('can get tv show details and returns dto', function () {
 it('finds tv show by tvdb id', function () {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
-    $tv_show = (new TvShow(api_key: $api_key))->find('81189', ExternalSourcesEnum::TVDB, raw: true); // Breaking Bad
+    $tv_show = (new TvShow(api_key: $api_key))->find('81189', ExternalIdsEnum::TVDB, raw: true); // Breaking Bad
 
     expect($tv_show)
         ->toBeArray()
@@ -58,7 +58,7 @@ it('finds tv show by tvdb id', function () {
 it('finds tv show by tvdb id and return dto', function () {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
-    $tv_show = (new TvShow(api_key: $api_key))->find('81189', ExternalSourcesEnum::TVDB); // Breaking Bad
+    $tv_show = (new TvShow(api_key: $api_key))->find('81189', ExternalIdsEnum::TVDB); // Breaking Bad
 
     expect($tv_show)
         ->toBeInstanceOf(TvShowData::class)
