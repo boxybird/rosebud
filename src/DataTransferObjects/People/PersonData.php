@@ -36,7 +36,7 @@ final readonly class PersonData
             media_type: $data['media_type'] ?? null ? MediaTypesEnum::from($data['media_type']) : null,
             adult: $data['adult'] ?? null,
             popularity: $data['popularity'] ?? null,
-            gender: $data['gender'] ?? null ? GendersEnum::fromInt($data['gender']) : null,
+            gender: $data['gender'] ?? null ? GendersEnum::fromInt((int) $data['gender']) : null,
             known_for_department: $data['known_for_department'] ?? null,
             profile_path: $data['profile_path'] ?? null,
             known_for: $data['known_for'] ?? null ? array_map(fn(array $movie) => MovieData::fromArray($movie), $data['known_for']) : null,

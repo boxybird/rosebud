@@ -45,7 +45,7 @@ final readonly class PersonDetailsData
             biography: $data['biography'] ?? null,
             birthday: $data['birthday'] ?? null,
             deathday: $data['deathday'] ?? null,
-            gender: $data['gender'] ?? null ? GendersEnum::fromInt($data['gender']) : null,
+            gender: $data['gender'] ?? null ? GendersEnum::fromInt((int) $data['gender']) : null,
             homepage: $data['homepage'] ?? null,
             id: $data['id'],
             imdb_id: $data['imdb_id'] ?? null,

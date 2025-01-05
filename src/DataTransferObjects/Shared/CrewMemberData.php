@@ -27,7 +27,7 @@ final readonly class CrewMemberData
     {
         return new self(
             adult: $data['adult'],
-            gender: $data['gender'] ?? null ? GendersEnum::fromInt($data['gender']) : null,
+            gender: $data['gender'] ?? null ? GendersEnum::fromInt((int) $data['gender']) : null,
             id: $data['id'],
             known_for_department: $data['known_for_department'],
             name: $data['name'],

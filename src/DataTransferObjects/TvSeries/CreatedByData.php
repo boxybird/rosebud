@@ -23,7 +23,7 @@ final readonly class CreatedByData
             id: $data['id'],
             credit_id: $data['credit_id'],
             name: $data['name'],
-            gender: $data['gender'] ?? null ? GendersEnum::fromInt($data['gender']) : null,
+            gender: $data['gender'] ?? null ? GendersEnum::fromInt((int) $data['gender']) : null,
             profile_path: $data['profile_path'] ?? null,
             computed: ComputedData::fromArray($data),
         );
