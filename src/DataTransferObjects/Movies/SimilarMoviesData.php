@@ -17,7 +17,7 @@ final readonly class SimilarMoviesData
     {
         return new self(
             page: $data['page'],
-            results: array_map(fn(array $movie) => SimilarMovieData::fromArray($movie), $data['results']),
+            results: array_map(fn(array $movie): SimilarMovieData => SimilarMovieData::fromArray($movie), $data['results']),
         );
     }
 
@@ -25,7 +25,7 @@ final readonly class SimilarMoviesData
     {
         return [
             'page' => $this->page,
-            'results' => array_map(fn(SimilarMovieData $movie) => $movie->toArray(), $this->results),
+            'results' => array_map(fn(SimilarMovieData $movie): array => $movie->toArray(), $this->results),
         ];
     }
 }

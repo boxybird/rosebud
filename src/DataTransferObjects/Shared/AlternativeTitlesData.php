@@ -15,14 +15,14 @@ final readonly class AlternativeTitlesData
     public static function fromArray(array $data): self
     {
         return new self(
-            titles: array_map(fn(array $title) => AlternativeTitleData::fromArray($title), $data['titles'] ?? $data['results']),
+            titles: array_map(fn(array $title): AlternativeTitleData => AlternativeTitleData::fromArray($title), $data['titles'] ?? $data['results']),
         );
     }
 
     public function toArray(): array
     {
         return [
-            'titles' => array_map(fn(AlternativeTitleData $title) => $title->toArray(), $this->titles),
+            'titles' => array_map(fn(AlternativeTitleData $title): array => $title->toArray(), $this->titles),
         ];
     }
 }

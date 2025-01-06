@@ -17,7 +17,7 @@ final readonly class CountryReleaseDatesData
     {
         return new self(
             iso_3166_1: $data['iso_3166_1'],
-            release_dates: array_map(fn(array $date) => ReleaseDateData::fromArray($date), $data['release_dates']),
+            release_dates: array_map(fn(array $date): ReleaseDateData => ReleaseDateData::fromArray($date), $data['release_dates']),
         );
     }
 
@@ -25,7 +25,7 @@ final readonly class CountryReleaseDatesData
     {
         return [
             'iso_3166_1' => $this->iso_3166_1,
-            'release_dates' => array_map(fn(ReleaseDateData $date) => $date->toArray(), $this->release_dates),
+            'release_dates' => array_map(fn(ReleaseDateData $date): array => $date->toArray(), $this->release_dates),
         ];
     }
 }

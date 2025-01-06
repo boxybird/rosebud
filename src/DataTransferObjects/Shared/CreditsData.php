@@ -19,8 +19,8 @@ final readonly class CreditsData
     {
         return new self(
             id: $data['id'] ?? null,
-            cast: array_map(fn(array $member) => CastMemberData::fromArray($member), $data['cast']),
-            crew: array_map(fn(array $member) => CrewMemberData::fromArray($member), $data['crew']),
+            cast: array_map(fn(array $member): CastMemberData => CastMemberData::fromArray($member), $data['cast']),
+            crew: array_map(fn(array $member): CrewMemberData => CrewMemberData::fromArray($member), $data['crew']),
         );
     }
 
@@ -28,8 +28,8 @@ final readonly class CreditsData
     {
         return [
             'id' => $this->id,
-            'cast' => array_map(fn(CastMemberData $member) => $member->toArray(), $this->cast),
-            'crew' => array_map(fn(CrewMemberData $member) => $member->toArray(), $this->crew),
+            'cast' => array_map(fn(CastMemberData $member): array => $member->toArray(), $this->cast),
+            'crew' => array_map(fn(CrewMemberData $member): array => $member->toArray(), $this->crew),
         ];
     }
 }

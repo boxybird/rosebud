@@ -14,7 +14,7 @@ it('can create a movie data transfer object and then back to matching array', fu
     expect($movie_data)->toBeInstanceOf(MovieData::class);
 
     $reflection = new ReflectionClass($movie_data);
-    $properties = array_map(fn($property) => $property->getName(), $reflection->getProperties());
+    $properties = array_map(fn($property): string => $property->getName(), $reflection->getProperties());
 
     $movie_array = $movie_data->toArray();
 
@@ -29,7 +29,7 @@ it('can create a movie detail data transfer object and then back to matching arr
     expect($movie_data)->toBeInstanceOf(MovieDetailsData::class);
 
     $reflection = new ReflectionClass($movie_data);
-    $properties = array_map(fn($property) => $property->getName(), $reflection->getProperties());
+    $properties = array_map(fn($property): string => $property->getName(), $reflection->getProperties());
 
     $movie_array = $movie_data->toArray();
 
@@ -43,7 +43,7 @@ it('can create a person data transfer object and then back to matching array', f
     expect($person_data)->toBeInstanceOf(PersonData::class);
 
     $reflection = new ReflectionClass($person_data);
-    $properties = array_map(fn($property) => $property->getName(), $reflection->getProperties());
+    $properties = array_map(fn($property): string => $property->getName(), $reflection->getProperties());
 
     $person_array = $person_data->toArray();
 
@@ -57,7 +57,7 @@ it('can create a person detail data transfer object and then back to matching ar
     expect($person_data)->toBeInstanceOf(PersonDetailsData::class);
 
     $reflection = new ReflectionClass($person_data);
-    $properties = array_map(fn($property) => $property->getName(), $reflection->getProperties());
+    $properties = array_map(fn($property): string => $property->getName(), $reflection->getProperties());
 
     $person_array = $person_data->toArray();
 
@@ -71,7 +71,7 @@ it('can create a tv show data transfer object and then back to matching array', 
     expect($tv_show_data)->toBeInstanceOf(TvShowData::class);
 
     $reflection = new ReflectionClass($tv_show_data);
-    $properties = array_map(fn($property) => $property->getName(), $reflection->getProperties());
+    $properties = array_map(fn($property): string => $property->getName(), $reflection->getProperties());
 
     $tv_show_array = $tv_show_data->toArray();
 
@@ -85,7 +85,7 @@ it('can create a tv show detail data transfer object and then back to matching a
     expect($tv_show_data)->toBeInstanceOf(TvShowDetailsData::class);
 
     $reflection = new ReflectionClass($tv_show_data);
-    $properties = array_map(fn($property) => $property->getName(), $reflection->getProperties());
+    $properties = array_map(fn($property): string => $property->getName(), $reflection->getProperties());
 
     $tv_show_array = $tv_show_data->toArray();
 
@@ -99,7 +99,7 @@ it('can create a tv episode data transfer object and then back to matching array
     expect($tv_episode_data)->toBeInstanceOf(TvEpisodeData::class);
 
     $reflection = new ReflectionClass($tv_episode_data);
-    $properties = array_map(fn($property) => $property->getName(), $reflection->getProperties());
+    $properties = array_map(fn($property): string => $property->getName(), $reflection->getProperties());
 
     $tv_episode_array = $tv_episode_data->toArray();
 

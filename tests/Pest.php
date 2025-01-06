@@ -24,10 +24,8 @@
 |
 */
 
-expect()->extend('toBeOne', function () {
-    // @phpstan-ignore-next-line
-    return $this->toBe(1);
-});
+expect()->extend('toBeOne', fn() => // @phpstan-ignore-next-line
+$this->toBe(1));
 
 /*
 |--------------------------------------------------------------------------

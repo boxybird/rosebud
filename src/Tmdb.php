@@ -39,7 +39,7 @@ class Tmdb
             'external_source' => $external_source->value,
         ], $times, $sleep);
 
-        $filtered_results = array_filter($results, fn($result) => !empty($result));
+        $filtered_results = array_filter($results, fn($result): bool => !empty($result));
         $key = array_key_first($filtered_results);
         $data = $filtered_results[$key][0] ?? [];
 

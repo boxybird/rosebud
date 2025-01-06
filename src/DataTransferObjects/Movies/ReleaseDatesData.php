@@ -15,14 +15,14 @@ final readonly class ReleaseDatesData
     public static function fromArray(array $data): self
     {
         return new self(
-            results: array_map(fn(array $countryData) => CountryReleaseDatesData::fromArray($countryData), $data['results']),
+            results: array_map(fn(array $countryData): CountryReleaseDatesData => CountryReleaseDatesData::fromArray($countryData), $data['results']),
         );
     }
 
     public function toArray(): array
     {
         return [
-            'results' => array_map(fn(CountryReleaseDatesData $countryData) => $countryData->toArray(), $this->results),
+            'results' => array_map(fn(CountryReleaseDatesData $countryData): array => $countryData->toArray(), $this->results),
         ];
     }
 }

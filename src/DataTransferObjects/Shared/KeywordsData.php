@@ -15,14 +15,14 @@ final readonly class KeywordsData
     public static function fromArray(array $data): self
     {
         return new self(
-            keywords: array_map(fn(array $keyword) => KeywordData::fromArray($keyword), $data['keywords'] ?? $data['results']),
+            keywords: array_map(fn(array $keyword): KeywordData => KeywordData::fromArray($keyword), $data['keywords'] ?? $data['results']),
         );
     }
 
     public function toArray(): array
     {
         return [
-            'keywords' => array_map(fn(KeywordData $keyword) => $keyword->toArray(), $this->keywords),
+            'keywords' => array_map(fn(KeywordData $keyword): array => $keyword->toArray(), $this->keywords),
         ];
     }
 

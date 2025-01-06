@@ -13,14 +13,14 @@ final readonly class CreatedBysData
     public static function fromArray(array $data): self
     {
         return new self(
-            created_bys: array_map(fn($item) => CreatedByData::fromArray($item), $data['created_by']),
+            created_bys: array_map(fn($item): CreatedByData => CreatedByData::fromArray($item), $data['created_by']),
         );
     }
 
     public function toArray(): array
     {
         return [
-            'created_bys' => array_map(fn(CreatedByData $item) => $item->toArray(), $this->created_bys),
+            'created_bys' => array_map(fn(CreatedByData $item): array => $item->toArray(), $this->created_bys),
         ];
     }
 }

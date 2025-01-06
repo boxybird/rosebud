@@ -17,7 +17,7 @@ final readonly class RecommendationsData
     {
         return new self(
             page: $data['page'],
-            results: array_map(fn(array $movie) => MovieData::fromArray($movie), $data['results']),
+            results: array_map(fn(array $movie): MovieData => MovieData::fromArray($movie), $data['results']),
         );
     }
 
@@ -25,7 +25,7 @@ final readonly class RecommendationsData
     {
         return [
             'page' => $this->page,
-            'results' => array_map(fn(MovieData $movie) => $movie->toArray(), $this->results),
+            'results' => array_map(fn(MovieData $movie): array => $movie->toArray(), $this->results),
         ];
     }
 }

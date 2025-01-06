@@ -18,7 +18,7 @@ final readonly class ReviewsData
     {
         return new self(
             page: $data['page'],
-            results: array_map(fn(array $review) => ReviewData::fromArray($review), $data['results']),
+            results: array_map(fn(array $review): ReviewData => ReviewData::fromArray($review), $data['results']),
         );
     }
 
@@ -26,7 +26,7 @@ final readonly class ReviewsData
     {
         return [
             'page' => $this->page,
-            'results' => array_map(fn(ReviewData $review) => $review->toArray(), $this->results),
+            'results' => array_map(fn(ReviewData $review): array => $review->toArray(), $this->results),
         ];
     }
 }

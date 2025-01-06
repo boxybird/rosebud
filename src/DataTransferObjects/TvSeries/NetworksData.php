@@ -13,14 +13,14 @@ class NetworksData
     public static function fromArray(array $data): self
     {
         return new self(
-            networks: array_map(fn($item) => NetworkData::fromArray($item), $data['networks']),
+            networks: array_map(fn($item): NetworkData => NetworkData::fromArray($item), $data['networks']),
         );
     }
 
     public function toArray(): array
     {
         return [
-            'networks' => array_map(fn(NetworkData $item) => $item->toArray(), $this->networks),
+            'networks' => array_map(fn(NetworkData $item): array => $item->toArray(), $this->networks),
         ];
     }
 }

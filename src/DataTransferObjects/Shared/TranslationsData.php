@@ -15,14 +15,14 @@ final readonly class TranslationsData
     public static function fromArray(array $data): self
     {
         return new self(
-            translations: array_map(fn(array $translation) => TranslationData::fromArray($translation), $data['translations']),
+            translations: array_map(fn(array $translation): TranslationData => TranslationData::fromArray($translation), $data['translations']),
         );
     }
 
     public function toArray(): array
     {
         return [
-            'translations' => array_map(fn(TranslationData $translation) => $translation->toArray(), $this->translations),
+            'translations' => array_map(fn(TranslationData $translation): array => $translation->toArray(), $this->translations),
         ];
     }
 }

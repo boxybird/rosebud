@@ -39,7 +39,7 @@ final readonly class PersonData
             gender: $data['gender'] ?? null ? GendersEnum::fromInt((int) $data['gender']) : null,
             known_for_department: $data['known_for_department'] ?? null,
             profile_path: $data['profile_path'] ?? null,
-            known_for: $data['known_for'] ?? null ? array_map(fn(array $movie) => MovieData::fromArray($movie), $data['known_for']) : null,
+            known_for: $data['known_for'] ?? null ? array_map(fn(array $movie): MovieData => MovieData::fromArray($movie), $data['known_for']) : null,
             computed: ComputedData::fromArray($data),
         );
     }
@@ -56,7 +56,7 @@ final readonly class PersonData
             'gender' => $this->gender?->getName(),
             'known_for_department' => $this->known_for_department,
             'profile_path' => $this->profile_path,
-            'known_for' => $this->known_for ? array_map(fn(MovieData $movie) => $movie->toArray(), $this->known_for) : null,
+            'known_for' => $this->known_for ? array_map(fn(MovieData $movie): array => $movie->toArray(), $this->known_for) : null,
             'computed' => $this->computed->toArray(),
         ];
     }
