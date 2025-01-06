@@ -5,7 +5,7 @@ use Rosebud\DataTransferObjects\Movies\MovieDetailsData;
 use Rosebud\DataTransferObjects\Movies\MovieListData;
 use Rosebud\Movie;
 
-it('finds movie by imdb id', function () {
+it('finds movie by imdb id', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movie = (new Movie(api_key: $api_key))->find('tt0137523', raw: true); // Fight Club
@@ -15,7 +15,7 @@ it('finds movie by imdb id', function () {
         ->and($movie['title'])->toBe('Fight Club');
 });
 
-it('finds movie by imdb id and return dto', function () {
+it('finds movie by imdb id and return dto', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movie = (new Movie(api_key: $api_key))->find('tt0137523'); // Fight Club
@@ -25,7 +25,7 @@ it('finds movie by imdb id and return dto', function () {
         ->and($movie->title)->toBe('Fight Club');
 });
 
-it('can get movie details', function () {
+it('can get movie details', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movie = (new Movie(api_key: $api_key))->details(924, raw: true); // Dawn of the Dead (2004)
@@ -36,7 +36,7 @@ it('can get movie details', function () {
 });
 
 
-it('can get movie details and return dto', function () {
+it('can get movie details and return dto', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movie = (new Movie(api_key: $api_key))->details(924); // Dawn of the Dead (2004)
@@ -45,7 +45,7 @@ it('can get movie details and return dto', function () {
         ->toBeInstanceOf(MovieDetailsData::class);
 });
 
-it('can get popular movies', function () {
+it('can get popular movies', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movies = (new Movie(api_key: $api_key))->popular(raw: true);
@@ -55,7 +55,7 @@ it('can get popular movies', function () {
 });
 
 
-it('can get popular movies and return dto', function () {
+it('can get popular movies and return dto', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movies = (new Movie(api_key: $api_key))->popular();
@@ -64,7 +64,7 @@ it('can get popular movies and return dto', function () {
         ->toBeInstanceOf(MovieListData::class);
 });
 
-it('can search for movies', function () {
+it('can search for movies', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movies = (new Movie(api_key: $api_key))->search('zombie', raw: true);
@@ -73,7 +73,7 @@ it('can search for movies', function () {
         ->toBeArray();
 });
 
-it('can search for movies and return dto', function () {
+it('can search for movies and return dto', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movies = (new Movie(api_key: $api_key))->search('zombie');

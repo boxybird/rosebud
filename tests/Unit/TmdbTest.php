@@ -6,7 +6,7 @@ use Rosebud\DataTransferObjects\TvEpisodes\TvEpisodeData;
 use Rosebud\DataTransferObjects\TvSeries\TvShowData;
 use Rosebud\Tmdb;
 
-it('can search tmdb by external source id "imdb_id" and find a movie', function () {
+it('can search tmdb by external source id "imdb_id" and find a movie', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movie = (new Tmdb(api_key: $api_key))->findByID('tt0137523', raw: true); // Fight Club
@@ -16,7 +16,7 @@ it('can search tmdb by external source id "imdb_id" and find a movie', function 
         ->and($movie['title'])->toBe('Fight Club');
 });
 
-it('can search tmdb by external source id "imdb_id" and find a movie and return dto', function () {
+it('can search tmdb by external source id "imdb_id" and find a movie and return dto', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $movie = (new Tmdb(api_key: $api_key))->findByID('tt0137523'); // Fight Club
@@ -26,7 +26,7 @@ it('can search tmdb by external source id "imdb_id" and find a movie and return 
         ->and($movie->title)->toBe('Fight Club');
 });
 
-it('can search tmdb by external source id "imdb_id" and find a tv show', function () {
+it('can search tmdb by external source id "imdb_id" and find a tv show', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $tv_show = (new Tmdb(api_key: $api_key))->findByID('tt0903747', raw: true);
@@ -36,7 +36,7 @@ it('can search tmdb by external source id "imdb_id" and find a tv show', functio
         ->and($tv_show['name'])->toBe('Breaking Bad');
 });
 
-it('can search tmdb by external source id "imdb_id" and find a tv show and return dto', function () {
+it('can search tmdb by external source id "imdb_id" and find a tv show and return dto', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $tv_show = (new Tmdb(api_key: $api_key))->findByID('tt0903747');
@@ -46,7 +46,7 @@ it('can search tmdb by external source id "imdb_id" and find a tv show and retur
         ->and($tv_show->name)->toBe('Breaking Bad');
 });
 
-it('can search tmdb by external source id "imdb_id" and find a tv episode', function () {
+it('can search tmdb by external source id "imdb_id" and find a tv episode', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $tv_episode = (new Tmdb(api_key: $api_key))->findByID('tt2301451', raw: true); // Breaking Bad - Ozymandias
@@ -56,7 +56,7 @@ it('can search tmdb by external source id "imdb_id" and find a tv episode', func
         ->and($tv_episode['name'])->toBe('Ozymandias');
 });
 
-it('can search tmdb by external source id "imdb_id" and find a tv episode and return dto', function () {
+it('can search tmdb by external source id "imdb_id" and find a tv episode and return dto', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $tv_episode = (new Tmdb(api_key: $api_key))->findByID('tt2301451'); // Breaking Bad - Ozymandias
@@ -66,7 +66,7 @@ it('can search tmdb by external source id "imdb_id" and find a tv episode and re
         ->and($tv_episode->name)->toBe('Ozymandias');
 });
 
-it('can search tmdb by external source id "imdb_id" and find a person', function () {
+it('can search tmdb by external source id "imdb_id" and find a person', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $person = (new Tmdb(api_key: $api_key))->findByID('nm0000093', raw: true); // Brad Pitt
@@ -76,7 +76,7 @@ it('can search tmdb by external source id "imdb_id" and find a person', function
         ->and($person['name'])->toBe('Brad Pitt');
 });
 
-it('can search tmdb by external source id "imdb_id" and find a person and return dto', function () {
+it('can search tmdb by external source id "imdb_id" and find a person and return dto', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $person = (new Tmdb(api_key: $api_key))->findByID('nm0000093'); // Brad Pitt

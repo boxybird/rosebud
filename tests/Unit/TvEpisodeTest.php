@@ -3,7 +3,7 @@
 use Rosebud\DataTransferObjects\TvEpisodes\TvEpisodeData;
 use Rosebud\TvEpisode;
 
-it('finds tv episode by imdb id', function () {
+it('finds tv episode by imdb id', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $tv_episode = (new TvEpisode(api_key: $api_key))->find('tt2301451', raw: true); // Breaking Bad - Ozymandias
@@ -13,7 +13,7 @@ it('finds tv episode by imdb id', function () {
         ->and($tv_episode['name'])->toBe('Ozymandias');
 });
 
-it('finds tv episode by imdb id and returns dto', function () {
+it('finds tv episode by imdb id and returns dto', function (): void {
     $api_key = getTestingEnv('TMDB_API_KEY');
 
     $tv_episode = (new TvEpisode(api_key: $api_key))->find('tt2301451'); // Breaking Bad - Ozymandias
