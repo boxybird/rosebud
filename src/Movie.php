@@ -20,12 +20,12 @@ class Movie extends Tmdb
     }
 
     public function details(
-        int $id,
+        int $movie_id,
         bool $raw = false,
         int $times = self::DEFAULT_TIMES,
         int $sleep = self::DEFAULT_SLEEP
     ): MovieDetailsData|array {
-        $data = $this->get($this->base_url.'/movie/'.$id, [
+        $data = $this->get($this->base_url.'/movie/'.$movie_id, [
             'append_to_response' => $this->getDetailsAppendParams()
         ], $times, $sleep);
 

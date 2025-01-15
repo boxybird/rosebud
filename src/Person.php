@@ -19,12 +19,12 @@ class Person extends Tmdb
     }
 
     public function details(
-        int $id,
+        int $person_id,
         bool $raw = false,
         int $times = self::DEFAULT_TIMES,
         int $sleep = self::DEFAULT_SLEEP
     ): PersonDetailsData|array {
-        $data = $this->get($this->base_url.'/person/'.$id, [
+        $data = $this->get($this->base_url.'/person/'.$person_id, [
             'append_to_response' => $this->getDetailsAppendParams()
         ], $times, $sleep);
 

@@ -19,12 +19,12 @@ class TvShow extends Tmdb
     }
 
     public function details(
-        int $id,
+        int $series_id,
         bool $raw = false,
         int $times = self::DEFAULT_TIMES,
         int $sleep = self::DEFAULT_SLEEP
     ): TvShowDetailsData|array {
-        $response = $this->get($this->base_url.'/tv/'.$id, [
+        $response = $this->get($this->base_url.'/tv/'.$series_id, [
             'append_to_response' => $this->getDetailsAppendParams()
         ], $times, $sleep);
 
