@@ -9,7 +9,7 @@ final readonly class NetworkData
     public function __construct(
         public int $id,
         public string $name,
-        public string $logo_path,
+        public ?string $logo_path,
         public string $origin_country,
         public ComputedData $computed
     ) {
@@ -20,7 +20,7 @@ final readonly class NetworkData
         return new self(
             id: $data['id'],
             name: $data['name'],
-            logo_path: $data['logo_path'],
+            logo_path: $data['logo_path'] ?? null,
             origin_country: $data['origin_country'],
             computed: ComputedData::fromArray($data),
         );
