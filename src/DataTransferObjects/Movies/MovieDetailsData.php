@@ -15,6 +15,7 @@ use Rosebud\DataTransferObjects\Shared\ProductionCompanyData;
 use Rosebud\DataTransferObjects\Shared\ProductionCountryData;
 use Rosebud\DataTransferObjects\Shared\SpokenLanguageData;
 use Rosebud\DataTransferObjects\Shared\TranslationsData;
+use Rosebud\DataTransferObjects\Shared\VideosData;
 
 final readonly class MovieDetailsData
 {
