@@ -1,0 +1,1150 @@
+{
+  "air_date": "2013-09-15",
+  "crew": [
+    {
+      "job": "Director",
+      "department": "Directing",
+      "credit_id": "525423cb760ee313280023d8",
+      "adult": false,
+      "gender": 2,
+      "id": 67367,
+      "known_for_department": "Directing",
+      "name": "Rian Johnson",
+      "original_name": "Rian Johnson",
+      "popularity": 21.339,
+      "profile_path": "/uPWwvdppeZVKPbYcjXKU8zyuAVh.jpg"
+    },
+    {
+      "job": "Assistant Art Director",
+      "department": "Art",
+      "credit_id": "643fec9bb0ba7e04cf13314a",
+      "adult": false,
+      "gender": 1,
+      "id": 1537678,
+      "known_for_department": "Art",
+      "name": "Paula Dal Santo",
+      "original_name": "Paula Dal Santo",
+      "popularity": 1.295,
+      "profile_path": null
+    },
+    {
+      "job": "Director of Photography",
+      "department": "Camera",
+      "credit_id": "64603ebedbbb42015305d0a9",
+      "adult": false,
+      "gender": 2,
+      "id": 52034,
+      "known_for_department": "Directing",
+      "name": "Michael Slovis",
+      "original_name": "Michael Slovis",
+      "popularity": 13.939,
+      "profile_path": "/6L2U9eY6YisJlxlmQEwims8Gkf3.jpg"
+    },
+    {
+      "job": "Writer",
+      "department": "Writing",
+      "credit_id": "6443b454651fcf04b29d2b4f",
+      "adult": false,
+      "gender": 1,
+      "id": 1223198,
+      "known_for_department": "Writing",
+      "name": "Moira Walley-Beckett",
+      "original_name": "Moira Walley-Beckett",
+      "popularity": 3.184,
+      "profile_path": "/1sRNcxMZVsVcY6NFNQzASJuR8By.jpg"
+    }
+  ],
+  "episode_number": 14,
+  "guest_stars": [
+    {
+      "character": "Steven Gomez",
+      "credit_id": "5271b489760ee35b3e0881a7",
+      "order": 8,
+      "adult": false,
+      "gender": 2,
+      "id": 61535,
+      "known_for_department": "Acting",
+      "name": "Steven Michael Quezada",
+      "original_name": "Steven Michael Quezada",
+      "popularity": 10.109,
+      "profile_path": "/pVYrDkwI6GWvCNL2kJhpDJfBFyd.jpg"
+    },
+    {
+      "character": "Native American Man",
+      "credit_id": "52783137760ee37c54027895",
+      "order": 640,
+      "adult": false,
+      "gender": 2,
+      "id": 126829,
+      "known_for_department": "Acting",
+      "name": "Saginaw Grant",
+      "original_name": "Saginaw Grant",
+      "popularity": 11.985,
+      "profile_path": "/pQdS21e9ddOcSS2JzKsibdZexbd.jpg"
+    },
+    {
+      "character": "Detective #1",
+      "credit_id": "52783157760ee3757203bccd",
+      "order": 641,
+      "adult": false,
+      "gender": 0,
+      "id": 167145,
+      "known_for_department": "Acting",
+      "name": "Hank Rogerson",
+      "original_name": "Hank Rogerson",
+      "popularity": 7.133,
+      "profile_path": "/iP4XcHwxQsgeoRb9izKXGyXk3DQ.jpg"
+    },
+    {
+      "character": "Detective #2",
+      "credit_id": "52783181760ee375b3039628",
+      "order": 642,
+      "adult": false,
+      "gender": 2,
+      "id": 967704,
+      "known_for_department": "Acting",
+      "name": "Billy Lockwood",
+      "original_name": "Billy Lockwood",
+      "popularity": 4.104,
+      "profile_path": "/kH1J0HhK7GgAwqkpAJxOyRbPL2D.jpg"
+    },
+    {
+      "character": "Uncle Jack",
+      "credit_id": "52780156760ee3397038de79",
+      "order": 660,
+      "adult": false,
+      "gender": 2,
+      "id": 2234,
+      "known_for_department": "Acting",
+      "name": "Michael Bowen",
+      "original_name": "Michael Bowen",
+      "popularity": 23.631,
+      "profile_path": "/8clG1Q984hsYJSfpOVbnoJAEJb2.jpg"
+    },
+    {
+      "character": "Kenny",
+      "credit_id": "527801a9760ee331ce03af8a",
+      "order": 661,
+      "adult": false,
+      "gender": 2,
+      "id": 114000,
+      "known_for_department": "Acting",
+      "name": "Kevin Rankin",
+      "original_name": "Kevin Rankin",
+      "popularity": 19.094,
+      "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+    },
+    {
+      "character": "Lester",
+      "credit_id": "52782a42760ee375d4023968",
+      "order": 662,
+      "adult": false,
+      "gender": 2,
+      "id": 1105706,
+      "known_for_department": "Acting",
+      "name": "Tait Fletcher",
+      "original_name": "Tait Fletcher",
+      "popularity": 31.016,
+      "profile_path": "/zAVsHT2GBLPaQ4RpTopnHvIrCbv.jpg"
+    },
+    {
+      "character": "Frankie",
+      "credit_id": "527811bc760ee35e8e226e09",
+      "order": 663,
+      "adult": false,
+      "gender": 2,
+      "id": 1268114,
+      "known_for_department": "Acting",
+      "name": "Patrick Sane",
+      "original_name": "Patrick Sane",
+      "popularity": 6.389,
+      "profile_path": "/AnT9tInB0UNpZszdUiT5wT1AzpI.jpg"
+    },
+    {
+      "character": "Car Wash Customer (uncredited)",
+      "credit_id": "6315fec4326c190079d3f992",
+      "order": 703,
+      "adult": false,
+      "gender": 1,
+      "id": 1223198,
+      "known_for_department": "Writing",
+      "name": "Moira Walley-Beckett",
+      "original_name": "Moira Walley-Beckett",
+      "popularity": 3.184,
+      "profile_path": "/1sRNcxMZVsVcY6NFNQzASJuR8By.jpg"
+    },
+    {
+      "character": "Todd",
+      "credit_id": "6524ae29447f9c010048439b",
+      "order": 725,
+      "adult": false,
+      "gender": 2,
+      "id": 88124,
+      "known_for_department": "Acting",
+      "name": "Jesse Plemons",
+      "original_name": "Jesse Plemons",
+      "popularity": 48.743,
+      "profile_path": "/ckTthGclQE0y6b7gR0RpRo7LskL.jpg"
+    },
+    {
+      "character": "Matt",
+      "credit_id": "653eb897e894a600c516eb26",
+      "order": 835,
+      "adult": false,
+      "gender": 0,
+      "id": 1719996,
+      "known_for_department": "Acting",
+      "name": "Matthew T. Metzler",
+      "original_name": "Matthew T. Metzler",
+      "popularity": 0.705,
+      "profile_path": "/ivNVgsAbsyoBMFSt4Ek3kujxqWF.jpg"
+    },
+    {
+      "character": "Fireman (uncredited)",
+      "credit_id": "653eba22109cd000eae419ca",
+      "order": 841,
+      "adult": false,
+      "gender": 2,
+      "id": 48312,
+      "known_for_department": "Acting",
+      "name": "Noah Segan",
+      "original_name": "Noah Segan",
+      "popularity": 20.488,
+      "profile_path": "/j1mjH6uOZlKaiQ18U4SaTnmnjMl.jpg"
+    },
+    {
+      "character": "Cop #1",
+      "credit_id": "653eba71e894a600ad5756cc",
+      "order": 842,
+      "adult": false,
+      "gender": 0,
+      "id": 4346960,
+      "known_for_department": "Acting",
+      "name": "Patricio Delgado",
+      "original_name": "Patricio Delgado",
+      "popularity": 0.197,
+      "profile_path": null
+    },
+    {
+      "character": "Cop #2",
+      "credit_id": "659b1f2d5b12400148038445",
+      "order": 850,
+      "adult": false,
+      "gender": 2,
+      "id": 2569929,
+      "known_for_department": "Acting",
+      "name": "Carlos Telles",
+      "original_name": "Carlos Telles",
+      "popularity": 0.605,
+      "profile_path": null
+    }
+  ],
+  "name": "Ozymandias",
+  "overview": "Everyone copes with radically changed circumstances.",
+  "id": 62162,
+  "production_code": "",
+  "runtime": 48,
+  "season_number": 5,
+  "still_path": "/k80r5JYO4LLrPJbWDXmlg7IxRMI.jpg",
+  "vote_average": 9.403,
+  "vote_count": 262,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 17419,
+        "known_for_department": "Acting",
+        "name": "Bryan Cranston",
+        "original_name": "Bryan Cranston",
+        "popularity": 48.101,
+        "profile_path": "/aGSvZg7uITJveQtGHDcPNI6map1.jpg",
+        "character": "Walter White",
+        "credit_id": "52542282760ee313280017f9",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 84497,
+        "known_for_department": "Acting",
+        "name": "Aaron Paul",
+        "original_name": "Aaron Paul",
+        "popularity": 55.103,
+        "profile_path": "/tz4xqaoXV7eKrYqPGPvtEae3X06.jpg",
+        "character": "Jesse Pinkman",
+        "credit_id": "52542282760ee31328001845",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 134531,
+        "known_for_department": "Acting",
+        "name": "Anna Gunn",
+        "original_name": "Anna Gunn",
+        "popularity": 40.814,
+        "profile_path": "/adppyeu1a4REN3khtgmXusrapFi.jpg",
+        "character": "Skyler White",
+        "credit_id": "52542282760ee3132800181b",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 209674,
+        "known_for_department": "Acting",
+        "name": "RJ Mitte",
+        "original_name": "RJ Mitte",
+        "popularity": 29.037,
+        "profile_path": "/aG6NYV2EgzBFLRIl7vvbtd7go1j.jpg",
+        "character": "Walter White Jr.",
+        "credit_id": "52542284760ee313280018a9",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 14329,
+        "known_for_department": "Acting",
+        "name": "Dean Norris",
+        "original_name": "Dean Norris",
+        "popularity": 48.894,
+        "profile_path": "/mVaGouQNschhJEncob8ld1aOZwF.jpg",
+        "character": "Hank Schrader",
+        "credit_id": "52542283760ee3132800187b",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1217934,
+        "known_for_department": "Acting",
+        "name": "Betsy Brandt",
+        "original_name": "Betsy Brandt",
+        "popularity": 26.032,
+        "profile_path": "/kIbVUpGfLAF1KMn1YvWPnc12DRP.jpg",
+        "character": "Marie Schrader",
+        "credit_id": "52542283760ee31328001891",
+        "order": 5
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 59410,
+        "known_for_department": "Acting",
+        "name": "Bob Odenkirk",
+        "original_name": "Bob Odenkirk",
+        "popularity": 29.264,
+        "profile_path": "/rF0Lb6SBhGSTvjRffmlKRSeI3jE.jpg",
+        "character": "Saul Goodman",
+        "credit_id": "5271b180760ee35afc09bb8d",
+        "order": 7
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 783,
+        "known_for_department": "Acting",
+        "name": "Jonathan Banks",
+        "original_name": "Jonathan Banks",
+        "popularity": 53.952,
+        "profile_path": "/bswk26L13PvY4iMTwUTAsepXCLv.jpg",
+        "character": "Mike Ehrmantraut",
+        "credit_id": "5271b1e6760ee35af60941ad",
+        "order": 9
+      }
+    ],
+    "crew": [
+      {
+        "job": "Director",
+        "department": "Directing",
+        "credit_id": "525423cb760ee313280023d8",
+        "adult": false,
+        "gender": 2,
+        "id": 67367,
+        "known_for_department": "Directing",
+        "name": "Rian Johnson",
+        "original_name": "Rian Johnson",
+        "popularity": 21.339,
+        "profile_path": "/uPWwvdppeZVKPbYcjXKU8zyuAVh.jpg"
+      },
+      {
+        "job": "Assistant Art Director",
+        "department": "Art",
+        "credit_id": "643fec9bb0ba7e04cf13314a",
+        "adult": false,
+        "gender": 1,
+        "id": 1537678,
+        "known_for_department": "Art",
+        "name": "Paula Dal Santo",
+        "original_name": "Paula Dal Santo",
+        "popularity": 1.295,
+        "profile_path": null
+      },
+      {
+        "job": "Director of Photography",
+        "department": "Camera",
+        "credit_id": "64603ebedbbb42015305d0a9",
+        "adult": false,
+        "gender": 2,
+        "id": 52034,
+        "known_for_department": "Directing",
+        "name": "Michael Slovis",
+        "original_name": "Michael Slovis",
+        "popularity": 13.939,
+        "profile_path": "/6L2U9eY6YisJlxlmQEwims8Gkf3.jpg"
+      },
+      {
+        "job": "Writer",
+        "department": "Writing",
+        "credit_id": "6443b454651fcf04b29d2b4f",
+        "adult": false,
+        "gender": 1,
+        "id": 1223198,
+        "known_for_department": "Writing",
+        "name": "Moira Walley-Beckett",
+        "original_name": "Moira Walley-Beckett",
+        "popularity": 3.184,
+        "profile_path": "/1sRNcxMZVsVcY6NFNQzASJuR8By.jpg"
+      }
+    ],
+    "guest_stars": [
+      {
+        "character": "Steven Gomez",
+        "credit_id": "5271b489760ee35b3e0881a7",
+        "order": 8,
+        "adult": false,
+        "gender": 2,
+        "id": 61535,
+        "known_for_department": "Acting",
+        "name": "Steven Michael Quezada",
+        "original_name": "Steven Michael Quezada",
+        "popularity": 10.109,
+        "profile_path": "/pVYrDkwI6GWvCNL2kJhpDJfBFyd.jpg"
+      },
+      {
+        "character": "Native American Man",
+        "credit_id": "52783137760ee37c54027895",
+        "order": 640,
+        "adult": false,
+        "gender": 2,
+        "id": 126829,
+        "known_for_department": "Acting",
+        "name": "Saginaw Grant",
+        "original_name": "Saginaw Grant",
+        "popularity": 11.985,
+        "profile_path": "/pQdS21e9ddOcSS2JzKsibdZexbd.jpg"
+      },
+      {
+        "character": "Detective #1",
+        "credit_id": "52783157760ee3757203bccd",
+        "order": 641,
+        "adult": false,
+        "gender": 0,
+        "id": 167145,
+        "known_for_department": "Acting",
+        "name": "Hank Rogerson",
+        "original_name": "Hank Rogerson",
+        "popularity": 7.133,
+        "profile_path": "/iP4XcHwxQsgeoRb9izKXGyXk3DQ.jpg"
+      },
+      {
+        "character": "Detective #2",
+        "credit_id": "52783181760ee375b3039628",
+        "order": 642,
+        "adult": false,
+        "gender": 2,
+        "id": 967704,
+        "known_for_department": "Acting",
+        "name": "Billy Lockwood",
+        "original_name": "Billy Lockwood",
+        "popularity": 4.104,
+        "profile_path": "/kH1J0HhK7GgAwqkpAJxOyRbPL2D.jpg"
+      },
+      {
+        "character": "Uncle Jack",
+        "credit_id": "52780156760ee3397038de79",
+        "order": 660,
+        "adult": false,
+        "gender": 2,
+        "id": 2234,
+        "known_for_department": "Acting",
+        "name": "Michael Bowen",
+        "original_name": "Michael Bowen",
+        "popularity": 23.631,
+        "profile_path": "/8clG1Q984hsYJSfpOVbnoJAEJb2.jpg"
+      },
+      {
+        "character": "Kenny",
+        "credit_id": "527801a9760ee331ce03af8a",
+        "order": 661,
+        "adult": false,
+        "gender": 2,
+        "id": 114000,
+        "known_for_department": "Acting",
+        "name": "Kevin Rankin",
+        "original_name": "Kevin Rankin",
+        "popularity": 19.094,
+        "profile_path": "/fOW5R6BSgRvMrt2R7KAxSk7L4H2.jpg"
+      },
+      {
+        "character": "Lester",
+        "credit_id": "52782a42760ee375d4023968",
+        "order": 662,
+        "adult": false,
+        "gender": 2,
+        "id": 1105706,
+        "known_for_department": "Acting",
+        "name": "Tait Fletcher",
+        "original_name": "Tait Fletcher",
+        "popularity": 31.016,
+        "profile_path": "/zAVsHT2GBLPaQ4RpTopnHvIrCbv.jpg"
+      },
+      {
+        "character": "Frankie",
+        "credit_id": "527811bc760ee35e8e226e09",
+        "order": 663,
+        "adult": false,
+        "gender": 2,
+        "id": 1268114,
+        "known_for_department": "Acting",
+        "name": "Patrick Sane",
+        "original_name": "Patrick Sane",
+        "popularity": 6.389,
+        "profile_path": "/AnT9tInB0UNpZszdUiT5wT1AzpI.jpg"
+      },
+      {
+        "character": "Car Wash Customer (uncredited)",
+        "credit_id": "6315fec4326c190079d3f992",
+        "order": 703,
+        "adult": false,
+        "gender": 1,
+        "id": 1223198,
+        "known_for_department": "Writing",
+        "name": "Moira Walley-Beckett",
+        "original_name": "Moira Walley-Beckett",
+        "popularity": 3.184,
+        "profile_path": "/1sRNcxMZVsVcY6NFNQzASJuR8By.jpg"
+      },
+      {
+        "character": "Todd",
+        "credit_id": "6524ae29447f9c010048439b",
+        "order": 725,
+        "adult": false,
+        "gender": 2,
+        "id": 88124,
+        "known_for_department": "Acting",
+        "name": "Jesse Plemons",
+        "original_name": "Jesse Plemons",
+        "popularity": 48.743,
+        "profile_path": "/ckTthGclQE0y6b7gR0RpRo7LskL.jpg"
+      },
+      {
+        "character": "Matt",
+        "credit_id": "653eb897e894a600c516eb26",
+        "order": 835,
+        "adult": false,
+        "gender": 0,
+        "id": 1719996,
+        "known_for_department": "Acting",
+        "name": "Matthew T. Metzler",
+        "original_name": "Matthew T. Metzler",
+        "popularity": 0.705,
+        "profile_path": "/ivNVgsAbsyoBMFSt4Ek3kujxqWF.jpg"
+      },
+      {
+        "character": "Fireman (uncredited)",
+        "credit_id": "653eba22109cd000eae419ca",
+        "order": 841,
+        "adult": false,
+        "gender": 2,
+        "id": 48312,
+        "known_for_department": "Acting",
+        "name": "Noah Segan",
+        "original_name": "Noah Segan",
+        "popularity": 20.488,
+        "profile_path": "/j1mjH6uOZlKaiQ18U4SaTnmnjMl.jpg"
+      },
+      {
+        "character": "Cop #1",
+        "credit_id": "653eba71e894a600ad5756cc",
+        "order": 842,
+        "adult": false,
+        "gender": 0,
+        "id": 4346960,
+        "known_for_department": "Acting",
+        "name": "Patricio Delgado",
+        "original_name": "Patricio Delgado",
+        "popularity": 0.197,
+        "profile_path": null
+      },
+      {
+        "character": "Cop #2",
+        "credit_id": "659b1f2d5b12400148038445",
+        "order": 850,
+        "adult": false,
+        "gender": 2,
+        "id": 2569929,
+        "known_for_department": "Acting",
+        "name": "Carlos Telles",
+        "original_name": "Carlos Telles",
+        "popularity": 0.605,
+        "profile_path": null
+      }
+    ]
+  },
+  "external_ids": {
+    "imdb_id": "tt2301451",
+    "freebase_mid": "/m/0qzvm2x",
+    "freebase_id": null,
+    "tvdb_id": 4553040,
+    "tvrage_id": null,
+    "wikidata_id": "Q15015260"
+  },
+  "images": {
+    "stills": []
+  },
+  "translations": {
+    "translations": [
+      {
+        "iso_3166_1": "US",
+        "iso_639_1": "en",
+        "name": "English",
+        "english_name": "English",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Everyone copes with radically changed circumstances."
+        }
+      },
+      {
+        "iso_3166_1": "DE",
+        "iso_639_1": "de",
+        "name": "Deutsch",
+        "english_name": "German",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Nach der Schießerei will Walt mit seiner Familie flüchten. Jesse wird als Geisel genommen. Marie überzeugt Skyler, Walter jr. die Wahrheit zu sagen."
+        }
+      },
+      {
+        "iso_3166_1": "FR",
+        "iso_639_1": "fr",
+        "name": "Français",
+        "english_name": "French",
+        "data": {
+          "name": "Seul au monde",
+          "overview": "Walt et Jesse survivent à la fusillade dans le désert. Cette fois, Walt espère que Jack, l'oncle de Todd, s'acquittera de sa part du marché en éliminant son ex-assistant. Mais Todd parvient à convaincre son oncle de garder Jesse en vie, afin qu'il transforme ce qu'il leur reste de méthylamine. Pendant que Walt révèle à Jesse la vérité sur la mort de Jane, Marie va trouver sa soeur à la station de lavage. Après un appel de Hank, elle pense que le mari de Skyler est désormais sous les verrous. Pourtant, quand elle rentre chez elle, Skyler trouve Walt à la maison, prêt à fuir avec elle et les enfants…"
+        }
+      },
+      {
+        "iso_3166_1": "NL",
+        "iso_639_1": "nl",
+        "name": "Nederlands",
+        "english_name": "Dutch",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Jesse wordt ontvoerd door de oom van Todd, terwijl Walt wordt achtergelaten in de woestijn en zichzelf moet zien te redden. Ondertussen vindt Skyler het tijd dat haar zoon de waarheid te horen krijgt."
+        }
+      },
+      {
+        "iso_3166_1": "TR",
+        "iso_639_1": "tr",
+        "name": "Türkçe",
+        "english_name": "Turkish",
+        "data": {
+          "name": "Kaçınılmaz Son",
+          "overview": "Dizinin sonuna yaklaşıldıkça herkes, radikal değişimlere uyum sağlamaya çalışmaktadır."
+        }
+      },
+      {
+        "iso_3166_1": "SK",
+        "iso_639_1": "sk",
+        "name": "Slovenčina",
+        "english_name": "Slovak",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "RU",
+        "iso_639_1": "ru",
+        "name": "Pусский",
+        "english_name": "Russian",
+        "data": {
+          "name": "Озимандия",
+          "overview": "Начавшаяся перестрелка печально заканчивается для напарника Хэнка, и, несмотря на просьбы Уолтера, судьба Шрейдера тоже оказывается решена. Забрав Пинкмана под предлогом допроса, Тодд и остальные насильно заставляют его работать на производстве, в то время как чудом добравшийся домой Уайт тщетно пытается спасти семью от настигающей их участи. Между тем Мари форсирует события, вынуждая Скайлер отдать ей запись и признаться сыну в поступках отца, а Уолтер делает всё, чтобы взять всю вину на себя."
+        }
+      },
+      {
+        "iso_3166_1": "HU",
+        "iso_639_1": "hu",
+        "name": "Magyar",
+        "english_name": "Hungarian",
+        "data": {
+          "name": "A bukás szele",
+          "overview": "Walter 80 millió dollárt ajánl fel Jacknek, csak hagyja életben a súlyosan sérült Hanket, de a bandavezér hidegvérrel végez vele. Magukkal viszik Jesset és a pénzt is. Jesset megkínozzák és arra kényszerítik, hogy gyártson nekik drogot. Skyler úgy dönt, hogy itt az ideje elmondani az igazságot Walter Jr.-nak. Walter őrültként száguld haza és pakolni kezd a bőröndökbe, hogy eltűnjön a családjával, de a többiek ellenállnak. Skyler kést fog a férjére, mire dulakodni kezdenek, végül Walter Jr. hívja ki a rendőrséget a saját apjára. Walter úgy intézi, hogy a rendőrség megtudja, hogy mindenért, amit tett, csak ő volt egyedül a felelős, majd eltűnik, hogy új személyazonossággal szökésben lehessen."
+        }
+      },
+      {
+        "iso_3166_1": "CN",
+        "iso_639_1": "zh",
+        "name": "普通话",
+        "english_name": "Mandarin",
+        "data": {
+          "name": "万王之王",
+          "overview": "所有人都面临着现实的巨变。"
+        }
+      },
+      {
+        "iso_3166_1": "ES",
+        "iso_639_1": "es",
+        "name": "Español",
+        "english_name": "Spanish",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Walter sufre terribles consecuencias por todo lo que hizo y todos tienen que tratar con circunstancias radicalmente cambiadas."
+        }
+      },
+      {
+        "iso_3166_1": "GR",
+        "iso_639_1": "el",
+        "name": "ελληνικά",
+        "english_name": "Greek",
+        "data": {
+          "name": "Οζυμανδίας",
+          "overview": "Λίγο πριν από το τέλος της σειράς, έρχονται όλοι αντιμέτωποι με μια άρδην διαφορετική κατάσταση."
+        }
+      },
+      {
+        "iso_3166_1": "PT",
+        "iso_639_1": "pt",
+        "name": "Português",
+        "english_name": "Portuguese",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Toda a gente tenta lidar com a mudança radical de circunstâncias."
+        }
+      },
+      {
+        "iso_3166_1": "IT",
+        "iso_639_1": "it",
+        "name": "Italiano",
+        "english_name": "Italian",
+        "data": {
+          "name": "Declino",
+          "overview": "Mentre la serie volge al termine, tutti i personaggi affrontano cambiamenti radicali."
+        }
+      },
+      {
+        "iso_3166_1": "BG",
+        "iso_639_1": "bg",
+        "name": "български език",
+        "english_name": "Bulgarian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "RO",
+        "iso_639_1": "ro",
+        "name": "Română",
+        "english_name": "Romanian",
+        "data": {
+          "name": "Singur pe lume",
+          "overview": "Pe măsură ce serialul se apropie de final, toată lumea face față unor circumstanțe extrem de diferite."
+        }
+      },
+      {
+        "iso_3166_1": "KR",
+        "iso_639_1": "ko",
+        "name": "한국어/조선말",
+        "english_name": "Korean",
+        "data": {
+          "name": "오지맨디아스",
+          "overview": "시리즈의 마지막이 가까워지면서, 급작스럽게 변한 상황에 모두가 힘들어한다."
+        }
+      },
+      {
+        "iso_3166_1": "IL",
+        "iso_639_1": "he",
+        "name": "עִבְרִית",
+        "english_name": "Hebrew",
+        "data": {
+          "name": "אוזימנדיאס",
+          "overview": "הסדרה קרבה לסיומה, וכולם מתמודדים עם שינויים קיצוניים."
+        }
+      },
+      {
+        "iso_3166_1": "PL",
+        "iso_639_1": "pl",
+        "name": "Polski",
+        "english_name": "Polish",
+        "data": {
+          "name": "Ozymandiasz",
+          "overview": "Serial zaczyna zmierzać do końca i zdaje się, że wszyscy pogodzili się z całkowicie odmienionymi realiami."
+        }
+      },
+      {
+        "iso_3166_1": "DK",
+        "iso_639_1": "da",
+        "name": "Dansk",
+        "english_name": "Danish",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Pludselig tager tingene en markant og uventet drejning. Walt tager benene på nakken, Jesse bliver kidnappet, og Skyler tror, at det er på tide at fortælle Flynn sandheden."
+        }
+      },
+      {
+        "iso_3166_1": "CZ",
+        "iso_639_1": "cs",
+        "name": "Český",
+        "english_name": "Czech",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Seriál se blíží ke konci a všichni se snaží vypořádat s radikální změnou okolností."
+        }
+      },
+      {
+        "iso_3166_1": "JP",
+        "iso_639_1": "ja",
+        "name": "日本語",
+        "english_name": "Japanese",
+        "data": {
+          "name": "オジマンディアス",
+          "overview": "事態は壮絶な銃撃戦へと発展し、ジャックは遂にハンクを追い詰めて銃口を向ける。ウォルターを裏切ったジェシーは、ジャックたちに連れさられる。何も知らないジュニアは「父親が逮捕された」と聞かされ、困惑してしまう。しかし、家に戻ると逮捕されたはずのウォルターがおり、家族で街を出ると言い放つのだった。その姿を見たスカイラーは家族の危険を察知し、ウォルターを家族から引き離そうとする。"
+        }
+      },
+      {
+        "iso_3166_1": "UA",
+        "iso_639_1": "uk",
+        "name": "Український",
+        "english_name": "Ukrainian",
+        "data": {
+          "name": "Озимандія",
+          "overview": "Кожен справляється з кардинально зміненими обставинами."
+        }
+      },
+      {
+        "iso_3166_1": "SE",
+        "iso_639_1": "sv",
+        "name": "svenska",
+        "english_name": "Swedish",
+        "data": {
+          "name": "",
+          "overview": "Serien går mot sitt slut och alla hanterar radikalt förändrade omständigheter."
+        }
+      },
+      {
+        "iso_3166_1": "BS",
+        "iso_639_1": "bs",
+        "name": "Bosanski",
+        "english_name": "Bosnian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "HR",
+        "iso_639_1": "hr",
+        "name": "Hrvatski",
+        "english_name": "Croatian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "LT",
+        "iso_639_1": "lt",
+        "name": "Lietuvių",
+        "english_name": "Lithuanian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "EE",
+        "iso_639_1": "et",
+        "name": "Eesti",
+        "english_name": "Estonian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "SA",
+        "iso_639_1": "ar",
+        "name": "العربية",
+        "english_name": "Arabic",
+        "data": {
+          "name": "أوزیماندیاس",
+          "overview": "بينما يقترب المسلسل من نهايته يتعامل الجميع مع الظروف التي تغيرت جذريًا."
+        }
+      },
+      {
+        "iso_3166_1": "IR",
+        "iso_639_1": "fa",
+        "name": "فارسی",
+        "english_name": "Persian",
+        "data": {
+          "name": "اوزیماندیاس",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "FI",
+        "iso_639_1": "fi",
+        "name": "suomi",
+        "english_name": "Finnish",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Walt ja Jesse kokkailevat rauhassa... kunnes luodit jälleen laulavat. Tulitaistelun jälkeen mikään ei ole kuten ennen, ja koko korttitalo alkaa luhistua. Epätoivoinen Walt yrittää vielä kerran selvitä pinteestä, ja Jesseä odottaa karu kohtalo."
+        }
+      },
+      {
+        "iso_3166_1": "TH",
+        "iso_639_1": "th",
+        "name": "ภาษาไทย",
+        "english_name": "Thai",
+        "data": {
+          "name": "โอซีแมนเดียส",
+          "overview": "ซีรีส์เรื่องนี้ใกล้ถึงบทสรุปขึ้นทุกขณะ ทุกคนต้องรับมือกับสถานการณ์ที่เปลี่ยนแปลงชนิดหน้ามือเป็นหลังมือ"
+        }
+      },
+      {
+        "iso_3166_1": "BR",
+        "iso_639_1": "pt",
+        "name": "Português",
+        "english_name": "Portuguese",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Todos precisam lidar com mudanças radicais."
+        }
+      },
+      {
+        "iso_3166_1": "CA",
+        "iso_639_1": "fr",
+        "name": "Français",
+        "english_name": "French",
+        "data": {
+          "name": "Seul au monde",
+          "overview": "Alors que la série tire sur sa fin, chacun doit gérer la nouvelle donne."
+        }
+      },
+      {
+        "iso_3166_1": "MX",
+        "iso_639_1": "es",
+        "name": "Español",
+        "english_name": "Spanish",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Todos deben enfrentar circunstancias radicalmente distintas. Todos, sin excepción."
+        }
+      },
+      {
+        "iso_3166_1": "RS",
+        "iso_639_1": "sr",
+        "name": "Srpski",
+        "english_name": "Serbian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "TW",
+        "iso_639_1": "zh",
+        "name": "普通话",
+        "english_name": "Mandarin",
+        "data": {
+          "name": "鄂斯曼德爾斯",
+          "overview": "在本季即將進入尾聲之際，每個人都必須面對大幅改變的局面。"
+        }
+      },
+      {
+        "iso_3166_1": "VN",
+        "iso_639_1": "vi",
+        "name": "Tiếng Việt",
+        "english_name": "Vietnamese",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Khi loạt phim dần tới hồi kết, ai cũng đối mặt với cục diện thay đổi hoàn toàn."
+        }
+      },
+      {
+        "iso_3166_1": "NO",
+        "iso_639_1": "no",
+        "name": "Norsk",
+        "english_name": "Norwegian",
+        "data": {
+          "name": "Ozymandias",
+          "overview": "Serien nærmer seg slutten, og hendelser, som ble satt i gang for lenge siden, nærmer seg også en konklusjon."
+        }
+      },
+      {
+        "iso_3166_1": "ES",
+        "iso_639_1": "ca",
+        "name": "Català",
+        "english_name": "Catalan",
+        "data": {
+          "name": "Ozymandias",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "ID",
+        "iso_639_1": "id",
+        "name": "Bahasa indonesia",
+        "english_name": "Indonesian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "LV",
+        "iso_639_1": "lv",
+        "name": "Latviešu",
+        "english_name": "Latvian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "GE",
+        "iso_639_1": "ka",
+        "name": "ქართული",
+        "english_name": "Georgian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "SI",
+        "iso_639_1": "sl",
+        "name": "Slovenščina",
+        "english_name": "Slovenian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "HK",
+        "iso_639_1": "zh",
+        "name": "普通话",
+        "english_name": "Mandarin",
+        "data": {
+          "name": "鄂斯曼德爾斯",
+          "overview": "在本季即將進入尾聲之際，每個人都必須面對大幅改變的局面。"
+        }
+      },
+      {
+        "iso_3166_1": "MY",
+        "iso_639_1": "my",
+        "name": "",
+        "english_name": "Burmese",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      }
+    ]
+  },
+  "videos": {
+    "results": [
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "Hank's Death - Ozymandias",
+        "key": "YCrngJCkI8I",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Clip",
+        "official": true,
+        "published_at": "2024-10-05T03:29:48.000Z",
+        "id": "670148b1e480149146856616"
+      },
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "Walt Kidnaps His Daughter - Ozymandias",
+        "key": "zFVpEwRYtXQ",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Clip",
+        "official": true,
+        "published_at": "2024-07-05T15:30:28.000Z",
+        "id": "668b678d544314ac6423c6d4"
+      },
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "Walt And Skyler Fight - Ozymandias",
+        "key": "G0g84xapiCM",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Clip",
+        "official": true,
+        "published_at": "2023-03-28T16:00:08.000Z",
+        "id": "6426b40fc0442901e81688ae"
+      },
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "Walt Tells Jesse The Truth About Jane - Ozymandias",
+        "key": "W1-BobfHVIc",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Clip",
+        "official": true,
+        "published_at": "2023-03-21T17:00:14.000Z",
+        "id": "641c0b76f9aa4700cde6fc9c"
+      },
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "Marie Pleads With Skyler - Ozymandias",
+        "key": "r98Y3DiTQ4c",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Clip",
+        "official": true,
+        "published_at": "2023-03-14T17:00:36.000Z",
+        "id": "641335e3a6c104009affc1c2"
+      },
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "\"Things Are Changing Rapidly\" - Ozymandias",
+        "key": "DawjUVitPEo",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Clip",
+        "official": true,
+        "published_at": "2023-03-10T17:00:09.000Z",
+        "id": "640bf6fd2a09bc00866abc38"
+      },
+      {
+        "iso_639_1": "en",
+        "iso_3166_1": "US",
+        "name": "\"Do What You Gotta Do\" - Ozymandias",
+        "key": "S7yNlm_Iafk",
+        "site": "YouTube",
+        "size": 1080,
+        "type": "Clip",
+        "official": true,
+        "published_at": "2023-03-03T17:30:05.000Z",
+        "id": "640309dc383df200a9548548"
+      }
+    ]
+  }
+}

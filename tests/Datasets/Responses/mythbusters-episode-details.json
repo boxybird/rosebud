@@ -1,0 +1,407 @@
+{
+  "air_date": "2004-01-18",
+  "crew": [],
+  "episode_number": 2,
+  "guest_stars": [],
+  "name": "Chicken Gun",
+  "overview": "Will launching a chicken at an airplane disrupt its flight, or will the bird be blown away? Is it possible for a woman to swallow an octopus egg -- and then give birth to an eight-legged offspring? Could a man be fatally assaulted and killed by his dirty laundry and washing machine?",
+  "id": 1158519,
+  "production_code": "",
+  "runtime": null,
+  "season_number": 2,
+  "still_path": "/j1n26oUWW1fnXxyOmg92a5aW4gk.jpg",
+  "vote_average": 0,
+  "vote_count": 0,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 83097,
+        "known_for_department": "Acting",
+        "name": "Adam Savage",
+        "original_name": "Adam Savage",
+        "popularity": 18.582,
+        "profile_path": "/ufxkgL7bALTQ1QKMRY3i3j1q25R.jpg",
+        "character": "Self - Host",
+        "credit_id": "53be695e0e0a26158f003ae8",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 83098,
+        "known_for_department": "Acting",
+        "name": "Jamie Hyneman",
+        "original_name": "Jamie Hyneman",
+        "popularity": 8.809,
+        "profile_path": "/jLonULcx7ehUb8IcdPrAhBMeqzW.jpg",
+        "character": "Self - Host",
+        "credit_id": "53be69770e0a26157c003b6d",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1339983,
+        "known_for_department": "Acting",
+        "name": "Kari Byron",
+        "original_name": "Kari Byron",
+        "popularity": 17.777,
+        "profile_path": "/uu33zfGCuL4SDDeTKCZMaCj90Qg.jpg",
+        "character": "Self - Host",
+        "credit_id": "53be69ce0e0a261579003bbc",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1339985,
+        "known_for_department": "Visual Effects",
+        "name": "Tory Belleci",
+        "original_name": "Tory Belleci",
+        "popularity": 19.381,
+        "profile_path": "/8ctf2Hqs9cLQ7gpF4PDJN6GLu5m.jpg",
+        "character": "Self - Host",
+        "credit_id": "53be69de0e0a261576003da2",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1339986,
+        "known_for_department": "Acting",
+        "name": "Grant Imahara",
+        "original_name": "Grant Imahara",
+        "popularity": 11.998,
+        "profile_path": "/jwQKhHBNAMFLT1InGmNNuvL6Q9I.jpg",
+        "character": "Self - Host",
+        "credit_id": "53be69ee0e0a26158f003af5",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 1339982,
+        "known_for_department": "Acting",
+        "name": "Robert Lee",
+        "original_name": "Robert Lee",
+        "popularity": 13.914,
+        "profile_path": "/5ELqQ8RdfRFwBcgwQFn9yO6yc4N.jpg",
+        "character": "Self - Narrator (voice)",
+        "credit_id": "53be69b90e0a261589003e4d",
+        "order": 6
+      }
+    ],
+    "crew": [],
+    "guest_stars": []
+  },
+  "external_ids": {
+    "imdb_id": "tt0768464",
+    "freebase_mid": null,
+    "freebase_id": null,
+    "tvdb_id": 113920,
+    "tvrage_id": null,
+    "wikidata_id": null
+  },
+  "images": {
+    "stills": []
+  },
+  "translations": {
+    "translations": [
+      {
+        "iso_3166_1": "CZ",
+        "iso_639_1": "cs",
+        "name": "Český",
+        "english_name": "Czech",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "PL",
+        "iso_639_1": "pl",
+        "name": "Polski",
+        "english_name": "Polish",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "IT",
+        "iso_639_1": "it",
+        "name": "Italiano",
+        "english_name": "Italian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "DK",
+        "iso_639_1": "da",
+        "name": "Dansk",
+        "english_name": "Danish",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "RO",
+        "iso_639_1": "ro",
+        "name": "Română",
+        "english_name": "Romanian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "TR",
+        "iso_639_1": "tr",
+        "name": "Türkçe",
+        "english_name": "Turkish",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "US",
+        "iso_639_1": "en",
+        "name": "English",
+        "english_name": "English",
+        "data": {
+          "name": "Chicken Gun",
+          "overview": "Will launching a chicken at an airplane disrupt its flight, or will the bird be blown away? Is it possible for a woman to swallow an octopus egg -- and then give birth to an eight-legged offspring? Could a man be fatally assaulted and killed by his dirty laundry and washing machine?"
+        }
+      },
+      {
+        "iso_3166_1": "NL",
+        "iso_639_1": "nl",
+        "name": "Nederlands",
+        "english_name": "Dutch",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "GR",
+        "iso_639_1": "el",
+        "name": "ελληνικά",
+        "english_name": "Greek",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "HU",
+        "iso_639_1": "hu",
+        "name": "Magyar",
+        "english_name": "Hungarian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "BG",
+        "iso_639_1": "bg",
+        "name": "български език",
+        "english_name": "Bulgarian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "ES",
+        "iso_639_1": "es",
+        "name": "Español",
+        "english_name": "Spanish",
+        "data": {
+          "name": "Cañón de pollos",
+          "overview": "¿Los pollos congelados causan más daño que los pollos descongelados cuando se les dispara el parabrisas de un avión?\n¿Pueden los huevos de pulpo eclosionar dentro del estómago de un ser humano?\n¿Hay algo de verdad en la extraña historia de un hombre que murió cuando trató de aplastar su ropa sucia en la lavadora de pie sobre ella?"
+        }
+      },
+      {
+        "iso_3166_1": "RU",
+        "iso_639_1": "ru",
+        "name": "Pусский",
+        "english_name": "Russian",
+        "data": {
+          "name": "Куриная пушка",
+          "overview": "Проверенные мифы:\n\nЗамороженная курица лучше пробивает самолёт или поезд по сравнению с размороженной.\n\nЧеловек, запихивая бельё в перегруженную стиральную машину, залез в неё ногами, а затем случайно её включил. Человек погиб, ударившись во время вращения о полку, вокруг рассыпался стиральный порошок и отбеливатель. Когда позже собака этого человека прибежала и помочилась на смесь порошка с отбеливателем, произошёл взрыв, а затем пожар.\n\nЖенщина во время купания проглотила оплодотворённое яйцо осьминога, которое созрело у нее в желудке, и со стороны казалось, что она забеременела."
+        }
+      },
+      {
+        "iso_3166_1": "PT",
+        "iso_639_1": "pt",
+        "name": "Português",
+        "english_name": "Portuguese",
+        "data": {
+          "name": "Chicken Gun",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "DE",
+        "iso_639_1": "de",
+        "name": "Deutsch",
+        "english_name": "German",
+        "data": {
+          "name": "Die Hühnerkanone",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "CN",
+        "iso_639_1": "zh",
+        "name": "普通话",
+        "english_name": "Mandarin",
+        "data": {
+          "name": "飞机鸟击",
+          "overview": "飞向飞机的熟鸡肉和生鸡肉是否会干扰其飞行，或喷气发动机是否会将其吹走？该团队制造了一个巨大的加压大炮，并向喷气式飞机的挡风玻璃发射一只鸡。\n\n一位女士在吞下章鱼蛋后会生下章鱼吗？\n\n你的洗衣机可以杀了你吗？"
+        }
+      },
+      {
+        "iso_3166_1": "FR",
+        "iso_639_1": "fr",
+        "name": "Français",
+        "english_name": "French",
+        "data": {
+          "name": "Canon à poulets, machine à laver tueuse",
+          "overview": "Y a-t-il une différence entre tirer dans un pare-brise avec un poulet congelé et un poulet décongelé ?\nVérification du mythe de l'utilisateur ayant grimpé dans le tambour de sa machine à laver et emporté par la mise en route de l'appareil."
+        }
+      },
+      {
+        "iso_3166_1": "BR",
+        "iso_639_1": "pt",
+        "name": "Português",
+        "english_name": "Portuguese",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "CA",
+        "iso_639_1": "fr",
+        "name": "Français",
+        "english_name": "French",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "UA",
+        "iso_639_1": "uk",
+        "name": "Український",
+        "english_name": "Ukrainian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "FI",
+        "iso_639_1": "fi",
+        "name": "suomi",
+        "english_name": "Finnish",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "SE",
+        "iso_639_1": "sv",
+        "name": "svenska",
+        "english_name": "Swedish",
+        "data": {
+          "name": "Chicken Gun",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "IL",
+        "iso_639_1": "he",
+        "name": "עִבְרִית",
+        "english_name": "Hebrew",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "NO",
+        "iso_639_1": "no",
+        "name": "Norsk",
+        "english_name": "Norwegian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "SK",
+        "iso_639_1": "sk",
+        "name": "Slovenčina",
+        "english_name": "Slovak",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "TW",
+        "iso_639_1": "zh",
+        "name": "普通话",
+        "english_name": "Mandarin",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "JP",
+        "iso_639_1": "ja",
+        "name": "日本語",
+        "english_name": "Japanese",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "KR",
+        "iso_639_1": "ko",
+        "name": "한국어/조선말",
+        "english_name": "Korean",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "MX",
+        "iso_639_1": "es",
+        "name": "Español",
+        "english_name": "Spanish",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      }
+    ]
+  },
+  "videos": {
+    "results": []
+  }
+}

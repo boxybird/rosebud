@@ -1,0 +1,345 @@
+{
+  "air_date": "1990-05-24",
+  "crew": [
+    {
+      "department": "Directing",
+      "job": "Director",
+      "credit_id": "52573ae2760ee36aaa007600",
+      "adult": false,
+      "gender": 2,
+      "id": 1213215,
+      "known_for_department": "Directing",
+      "name": "Noam Pitlik",
+      "original_name": "Noam Pitlik",
+      "popularity": 10.732,
+      "profile_path": "/7ds91Ds6dE8HhWcaQAqe9u58cOj.jpg"
+    }
+  ],
+  "episode_number": 6,
+  "guest_stars": [
+    {
+      "character": "Frank Guttman",
+      "credit_id": "52573ae3760ee36aaa0077d4",
+      "order": 510,
+      "adult": false,
+      "gender": 2,
+      "id": 167460,
+      "known_for_department": "Acting",
+      "name": "Steve Nevil",
+      "original_name": "Steve Nevil",
+      "popularity": 12.234,
+      "profile_path": null
+    },
+    {
+      "character": "Celia Stewart",
+      "credit_id": "6630d4f995c0af0129dad0f0",
+      "order": 752,
+      "adult": false,
+      "gender": 1,
+      "id": 102200,
+      "known_for_department": "Acting",
+      "name": "Peg Shirley",
+      "original_name": "Peg Shirley",
+      "popularity": 11.64,
+      "profile_path": "/rrhCi2i5va0ajYgEWt8F8uu9Gqa.jpg"
+    },
+    {
+      "character": "Gloria",
+      "credit_id": "6630d4fbcb71b80129a4c763",
+      "order": 753,
+      "adult": false,
+      "gender": 1,
+      "id": 3510457,
+      "known_for_department": "Acting",
+      "name": "Zetta Whitlow",
+      "original_name": "Zetta Whitlow",
+      "popularity": 0.301,
+      "profile_path": null
+    }
+  ],
+  "name": "All for One and Two for Helen",
+  "overview": "Joe spies on Brian and Helen when they go on a date.",
+  "id": 190110,
+  "production_code": "",
+  "runtime": 23,
+  "season_number": 1,
+  "still_path": "/fIbmpmv3UwJW67rO852WjjdmHWj.jpg",
+  "vote_average": 0,
+  "vote_count": 0,
+  "credits": {
+    "cast": [
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 68122,
+        "known_for_department": "Acting",
+        "name": "Tim Daly",
+        "original_name": "Tim Daly",
+        "popularity": 28.845,
+        "profile_path": "/wWUCWONFuT6sJLotL46fiZczAYk.jpg",
+        "character": "Joe Hackett",
+        "credit_id": "52573b12760ee36aaa00b54e",
+        "order": 0
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 6106,
+        "known_for_department": "Acting",
+        "name": "Steven Weber",
+        "original_name": "Steven Weber",
+        "popularity": 37.107,
+        "profile_path": "/8FtkapenCOpe39eE1sQus5WLWAq.jpg",
+        "character": "Brian Hackett",
+        "credit_id": "52573b10760ee36aaa00b463",
+        "order": 1
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 1226789,
+        "known_for_department": "Acting",
+        "name": "Crystal Bernard",
+        "original_name": "Crystal Bernard",
+        "popularity": 9.829,
+        "profile_path": "/bsuipk2YLkS09Fjkw0zlvkznhg1.jpg",
+        "character": "Helen Chapel",
+        "credit_id": "52573b10760ee36aaa00b37b",
+        "order": 2
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 6915,
+        "known_for_department": "Acting",
+        "name": "David Schramm",
+        "original_name": "David Schramm",
+        "popularity": 9.317,
+        "profile_path": "/551GOq7Z8hU5gL60Gw9BebAvirM.jpg",
+        "character": "Roy Biggins",
+        "credit_id": "52573b10760ee36aaa00b429",
+        "order": 3
+      },
+      {
+        "adult": false,
+        "gender": 1,
+        "id": 164221,
+        "known_for_department": "Acting",
+        "name": "Rebecca Schull",
+        "original_name": "Rebecca Schull",
+        "popularity": 14.373,
+        "profile_path": "/z3yWEcHuuy4pA0lcMiA6LUEMDiH.jpg",
+        "character": "Fay Cochran",
+        "credit_id": "52573b12760ee36aaa00b4da",
+        "order": 4
+      },
+      {
+        "adult": false,
+        "gender": 2,
+        "id": 19159,
+        "known_for_department": "Acting",
+        "name": "Thomas Haden Church",
+        "original_name": "Thomas Haden Church",
+        "popularity": 23.016,
+        "profile_path": "/74NK9HCYvNafMggSp1PAK5Nwkpe.jpg",
+        "character": "Lowell Mather",
+        "credit_id": "52573b10760ee36aaa00b49d",
+        "order": 8
+      }
+    ],
+    "crew": [
+      {
+        "department": "Directing",
+        "job": "Director",
+        "credit_id": "52573ae2760ee36aaa007600",
+        "adult": false,
+        "gender": 2,
+        "id": 1213215,
+        "known_for_department": "Directing",
+        "name": "Noam Pitlik",
+        "original_name": "Noam Pitlik",
+        "popularity": 10.732,
+        "profile_path": "/7ds91Ds6dE8HhWcaQAqe9u58cOj.jpg"
+      }
+    ],
+    "guest_stars": [
+      {
+        "character": "Frank Guttman",
+        "credit_id": "52573ae3760ee36aaa0077d4",
+        "order": 510,
+        "adult": false,
+        "gender": 2,
+        "id": 167460,
+        "known_for_department": "Acting",
+        "name": "Steve Nevil",
+        "original_name": "Steve Nevil",
+        "popularity": 12.234,
+        "profile_path": null
+      },
+      {
+        "character": "Celia Stewart",
+        "credit_id": "6630d4f995c0af0129dad0f0",
+        "order": 752,
+        "adult": false,
+        "gender": 1,
+        "id": 102200,
+        "known_for_department": "Acting",
+        "name": "Peg Shirley",
+        "original_name": "Peg Shirley",
+        "popularity": 11.64,
+        "profile_path": "/rrhCi2i5va0ajYgEWt8F8uu9Gqa.jpg"
+      },
+      {
+        "character": "Gloria",
+        "credit_id": "6630d4fbcb71b80129a4c763",
+        "order": 753,
+        "adult": false,
+        "gender": 1,
+        "id": 3510457,
+        "known_for_department": "Acting",
+        "name": "Zetta Whitlow",
+        "original_name": "Zetta Whitlow",
+        "popularity": 0.301,
+        "profile_path": null
+      }
+    ]
+  },
+  "external_ids": {
+    "imdb_id": "tt0749208",
+    "freebase_mid": "/m/05dnrqp",
+    "freebase_id": null,
+    "tvdb_id": 68938,
+    "tvrage_id": 233399,
+    "wikidata_id": "Q114471386"
+  },
+  "images": {
+    "stills": []
+  },
+  "translations": {
+    "translations": [
+      {
+        "iso_3166_1": "US",
+        "iso_639_1": "en",
+        "name": "English",
+        "english_name": "English",
+        "data": {
+          "name": "All for One and Two for Helen",
+          "overview": "Joe spies on Brian and Helen when they go on a date."
+        }
+      },
+      {
+        "iso_3166_1": "DE",
+        "iso_639_1": "de",
+        "name": "Deutsch",
+        "english_name": "German",
+        "data": {
+          "name": "Alle für einen und zwei für Helen",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "IT",
+        "iso_639_1": "it",
+        "name": "Italiano",
+        "english_name": "Italian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "RO",
+        "iso_639_1": "ro",
+        "name": "Română",
+        "english_name": "Romanian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "RU",
+        "iso_639_1": "ru",
+        "name": "Pусский",
+        "english_name": "Russian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "DK",
+        "iso_639_1": "da",
+        "name": "Dansk",
+        "english_name": "Danish",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "HU",
+        "iso_639_1": "hu",
+        "name": "Magyar",
+        "english_name": "Hungarian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "BG",
+        "iso_639_1": "bg",
+        "name": "български език",
+        "english_name": "Bulgarian",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "IL",
+        "iso_639_1": "he",
+        "name": "עִבְרִית",
+        "english_name": "Hebrew",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "CZ",
+        "iso_639_1": "cs",
+        "name": "Český",
+        "english_name": "Czech",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "ES",
+        "iso_639_1": "es",
+        "name": "Español",
+        "english_name": "Spanish",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      },
+      {
+        "iso_3166_1": "JP",
+        "iso_639_1": "ja",
+        "name": "日本語",
+        "english_name": "Japanese",
+        "data": {
+          "name": "",
+          "overview": ""
+        }
+      }
+    ]
+  },
+  "videos": {
+    "results": []
+  }
+}

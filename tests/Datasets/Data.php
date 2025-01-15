@@ -42,3 +42,9 @@ dataset('tv episodes', [
     [getResponse('mythbusters-episode.json')],
     [getResponse('breaking-bad-episode.json')],
 ]);
+
+dataset('tv episode details', [
+    [getResponse('wings-episode-details.json')],
+    [getResponse('mythbusters-episode-details.json')],
+    [getResponse('breaking-bad-episode-details.json')],
+]);
