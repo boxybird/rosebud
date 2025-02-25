@@ -7,7 +7,6 @@ namespace Rosebud\DataTransferObjects\Shared;
 final readonly class CreditsData
 {
     public function __construct(
-        public ?int $id,
         /** @var CastMemberData[] */
         public array $cast,
         /** @var CrewMemberData[] */
@@ -18,7 +17,6 @@ final readonly class CreditsData
     public static function fromArray(array $data): self
     {
         return new self(
-            id: $data['id'] ?? null,
             cast: array_map(fn(array $member): CastMemberData => CastMemberData::fromArray($member), $data['cast']),
             crew: array_map(fn(array $member): CrewMemberData => CrewMemberData::fromArray($member), $data['crew']),
         );
@@ -27,7 +25,6 @@ final readonly class CreditsData
     public function toArray(): array
     {
         return [
-            'id' => $this->id,
             'cast' => array_map(fn(CastMemberData $member): array => $member->toArray(), $this->cast),
             'crew' => array_map(fn(CrewMemberData $member): array => $member->toArray(), $this->crew),
         ];

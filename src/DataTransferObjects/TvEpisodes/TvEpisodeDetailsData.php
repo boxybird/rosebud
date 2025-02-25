@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Rosebud\DataTransferObjects\TvEpisodes;
 
+use Rosebud\DataTransferObjects\Shared\CreditsData;
 use Rosebud\DataTransferObjects\Shared\CrewMemberData;
 use Rosebud\DataTransferObjects\Shared\TranslationsData;
 use Rosebud\DataTransferObjects\Shared\VideoData;
@@ -27,7 +28,7 @@ final readonly class TvEpisodeDetailsData
         public ?string $still_path,
         public ?float $vote_average,
         public ?int $vote_count,
-        public ?array $credits,
+        public ?CreditsData $credits,
         public ?array $external_ids,
         public ?array $images,
         public ?TranslationsData $translations,
@@ -53,7 +54,7 @@ final readonly class TvEpisodeDetailsData
             still_path: $data['still_path'] ?? null,
             vote_average: $data['vote_average'] ?? null,
             vote_count: $data['vote_count'] ?? null,
-            credits: $data['credits'] ?? null,
+            credits: $data['credits'] ?? null ? CreditsData::fromArray($data['credits']) : null,
             external_ids: $data['external_ids'] ?? null,
             images: $data['images'] ?? null,
             translations: isset($data['translations']) ? TranslationsData::fromArray($data['translations']) : null,
@@ -78,7 +79,7 @@ final readonly class TvEpisodeDetailsData
             'still_path' => $this->still_path,
             'vote_average' => $this->vote_average,
             'vote_count' => $this->vote_count,
-            'credits' => $this->credits,
+            'credits' => $this->credits?->toArray(),
             'external_ids' => $this->external_ids,
             'images' => $this->images,
             'translations' => $this->translations?->toArray(),
