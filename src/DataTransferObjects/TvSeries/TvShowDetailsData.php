@@ -5,11 +5,15 @@ declare(strict_types=1);
 namespace Rosebud\DataTransferObjects\TvSeries;
 
 use Rosebud\DataTransferObjects\ComputedData;
+use Rosebud\DataTransferObjects\Shared\AlternativeTitlesData;
+use Rosebud\DataTransferObjects\Shared\CreditsData;
 use Rosebud\DataTransferObjects\Shared\GenreData;
+use Rosebud\DataTransferObjects\Shared\KeywordsData;
 use Rosebud\DataTransferObjects\Shared\ProductionCompanyData;
 use Rosebud\DataTransferObjects\Shared\ProductionCountryData;
 use Rosebud\DataTransferObjects\Shared\SpokenLanguageData;
 use Rosebud\DataTransferObjects\Shared\TranslationsData;
+use Rosebud\DataTransferObjects\Shared\VideosData;
 
 final readonly class TvShowDetailsData
 {
@@ -57,7 +61,13 @@ final readonly class TvShowDetailsData
         public ?string $type,
         public ?float $vote_average,
         public ?int $vote_count,
+        public ?AlternativeTitlesData $alternative_titles,
+        public ?CreditsData $credits,
+        public ?KeywordsData $keywords,
+        public ?RecommendationsData $recommendations,
+        public ?SimilarTvShowsData $similar,
         public ?TranslationsData $translations,
+        public ?VideosData $videos,
         public ?ComputedData $computed
     ) {
     }
@@ -100,7 +110,13 @@ final readonly class TvShowDetailsData
             type: $data['type'] ?? null,
             vote_average: $data['vote_average'] ?? null,
             vote_count: $data['vote_count'] ?? null,
+            alternative_titles: $data['alternative_titles'] ?? null ? AlternativeTitlesData::fromArray($data['alternative_titles']) : null,
+            credits: $data['credits'] ?? null ? CreditsData::fromArray($data['credits']) : null,
+            keywords: $data['keywords'] ?? null ? KeywordsData::fromArray($data['keywords']) : null,
+            recommendations: $data['recommendations'] ?? null ? RecommendationsData::fromArray($data['recommendations']) : null,
+            similar: $data['similar'] ?? null ? SimilarTvShowsData::fromArray($data['similar']) : null,
             translations: $data['translations'] ?? null ? TranslationsData::fromArray($data['translations']) : null,
+            videos: $data['videos'] ?? null ? VideosData::fromArray($data['videos']) : null,
             computed: ComputedData::fromArray($data),
         );
     }
@@ -141,7 +157,13 @@ final readonly class TvShowDetailsData
             'type' => $this->type,
             'vote_average' => $this->vote_average,
             'vote_count' => $this->vote_count,
+            'alternative_titles' => $this->alternative_titles?->toArray(),
+            'credits' => $this->credits?->toArray(),
+            'keywords' => $this->keywords?->toArray(),
+            'recommendations' => $this->recommendations?->toArray(),
+            'similar' => $this->similar?->toArray(),
             'translations' => $this->translations?->toArray(),
+            'videos' => $this->videos?->toArray(),
             'computed' => $this->computed->toArray(),
         ];
     }
