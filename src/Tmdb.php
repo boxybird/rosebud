@@ -68,7 +68,7 @@ class Tmdb
                 ->retry($times, $sleep)
                 ->get($url, $query);
 
-            return $response->successful() ? $response->json() : [];
+            return $response->successful() && !empty($response->json()) ? $response->json() : [];
         } catch (Exception) {
             return [];
         }
